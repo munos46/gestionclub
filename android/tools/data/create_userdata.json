@@ -1,0 +1,61 @@
+{
+"Joueur": [ 
+ { "id":1 , 
+"nom":"Marsel" , 
+"prenom":"Arnaud" , 
+"datenaissance":"1996-10-25 00:00:00" , 
+"email":null , 
+"photo":null , 
+ { "id":2 , 
+"nom":"Valery" , 
+"prenom":"Alexandre" , 
+"datenaissance":"1995-02-02 00:00:00" , 
+"email":"arnaud.alexandre@test.com" , 
+"photo":null , 
+ { "id":3 , 
+"nom":"Bouloc" , 
+"prenom":"Henri" , 
+"datenaissance":"1989-01-28 00:00:00" , 
+"email":null , 
+"photo":null , 
+ { "id":4 , 
+"nom":"Borie" , 
+"prenom":"Pierre" , 
+"datenaissance":"1993-05-03 00:00:00" , 
+"email":null , 
+"photo":null , 
+ ] 
+,
+"Lieu": [ 
+ { "id":1 , 
+"nom":"Trauc" , 
+"position":"1" , 
+ { "id":2 , 
+"nom":"Vabre" , 
+"position":"2" , 
+ ] 
+,
+"Entrainement": [ 
+ { "id":1 , 
+"lieuid":2 , 
+"dateheure":"2016-12-12 18:30:00" }, 
+ { "id":2 , 
+"lieuid":1 , 
+"dateheure":"2016-12-14 18:30:00" }, 
+ { "id":3 , 
+"lieuid":1 , 
+"dateheure":"2016-12-16 18:30:00" }, 
+ { "id":4 , 
+"lieuid":1 , 
+"dateheure":"2016-12-19 18:30:00" } 
+ ] 
+,
+"EntrainJoueur": [ 
+ { "joueurid":1 , 
+"entrainementid":1 }, 
+ { "joueurid":2 , 
+"entrainementid":1 }, 
+ { "joueurid":3 , 
+"entrainementid":1 } 
+ ] 
+}

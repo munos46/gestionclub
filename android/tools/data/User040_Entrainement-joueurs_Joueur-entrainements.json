@@ -1,0 +1,10 @@
+﻿ {
+"EntrainJoueur": [ 
+ { "joueurid":1 , 
+"entrainementid":1 }, 
+ { "joueurid":2 , 
+"entrainementid":1 }, 
+ { "joueurid":3 , 
+"entrainementid":1 } 
+ ] 
+ }

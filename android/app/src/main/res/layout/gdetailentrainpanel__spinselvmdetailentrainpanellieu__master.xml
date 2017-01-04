@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
+    android:id="@+id/seldetail__nom__value"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:maxLength="255"
+    mdk:hint="@string/seldetail__nom__label"
+    mdk:mandatory="true"
+    mdk:readOnly="true"
+    style="?attr/simpleSpinner_Item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android"/>
+<!--commented-generation-start
+
+<?xml version="1.0" encoding="UTF-8"?>
+<com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
+    android:id="@+id/seldetail__nom__value"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" android:maxLength="255"
+    mdk:hint="@string/seldetail__nom__label" mdk:mandatory="true"
+    mdk:readOnly="true" style="?attr/simpleSpinner_Item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android"/>
+
+
+commented-generation-start-->

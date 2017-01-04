@@ -1,0 +1,16 @@
+﻿ {
+"Entrainement": [ 
+ { "id":1 , 
+"lieuid":2 , 
+"dateheure":"2016-12-12 18:30:00" }, 
+ { "id":2 , 
+"lieuid":1 , 
+"dateheure":"2016-12-14 18:30:00" }, 
+ { "id":3 , 
+"lieuid":1 , 
+"dateheure":"2016-12-16 18:30:00" }, 
+ { "id":4 , 
+"lieuid":1 , 
+"dateheure":"2016-12-19 18:30:00" } 
+ ] 
+ }

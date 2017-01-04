@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMSpinnerCheckedTextView
+    android:id="@+id/lstvmlistentrainpanelimpl__nom__value"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_width="match_parent"
+    android:singleLine="true"
+    style="?attr/simpleSpinner_dropDown"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android"/>

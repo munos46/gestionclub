@@ -1,0 +1,145 @@
+
+Entity#Joueur
+Group#generated_model
+Products#NAME_PRODUCT
+FileName#User010_Joueur
+Admable#No
+Title(fr_FR;en_EN)#Joueur;Joueur
+TabTitle(fr_FR;en_EN)#Joueur;Joueur
+Name#ID#NOM#PRENOM#DATENAISSANCE#EMAIL#PHOTOIDENTIFIER#NAME#URI#SVG#DATE#DESC#PHOTOSTATE#
+Module#
+Label(fr_FR;en_EN)#identifier;identifier#nom;nom#prenom;prenom#datenaissance;datenaissance#email;email#photoidentifier;photoidentifier#name;name#uri;uri#svg;svg#date;date#desc;desc#photostate;photostate#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type string;champ de type string#champ de type string;champ de type string#champ de type datetime;champ de type datetime#champ de type string;champ de type string#champ de type number;champ de type number#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#
+VisualSize#10#30#30#30#30#15#0#0#0#0#0#0#
+SQL FIELD#ID#NOM#PRENOM#DATENAISSANCE#EMAIL##PHOTO_NAME#PHOTO_URI#PHOTO_SVG#PHOTO_DATE#PHOTO_DESC#PHOTO_PHOTOSTATE#
+Mandatory#yes#yes#yes#yes#no#no#no#no#no#no#no#no#
+Size#20#255#255##255#20#255#255#255##255#10#
+Type#numberid#string#string#datetime#string#ref1#string#string#string#datetime#string#value#
+Option#T_JOUEUR#####numberid######FWK_NONE[0];SELECTED[1];DOWNLOADED[2];TAKEN[3];TODOWNLOAD[4];#
+Option2######
+Unique#yes#####yes#######
+I18n#
+Reference from######JoueurPhoto.ID##
+Reference to######JoueurPhoto.ID##
+Ctrl#
+Req#0##T_JOUEUR#
+Entity#JoueurPhoto
+Group#generated_model
+Products#NAME_PRODUCT
+FileName#User011_JoueurPhoto
+Admable#No
+Title(fr_FR;en_EN)#JoueurPhoto;JoueurPhoto
+TabTitle(fr_FR;en_EN)#JoueurPhoto;JoueurPhoto
+Name#ID#NAME#URI#SVG#DATE#DESC#PHOTOSTATE#PHOTOJOUEUR#
+Module#
+Label(fr_FR;en_EN)#identifier;identifier#name;name#uri;uri#svg;svg#date;date#desc;desc#photostate;photostate#photojoueur#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type string;champ de type string#champ de type string;champ de type string#champ de type string;champ de type string#champ de type datetime;champ de type datetime#champ de type string;champ de type string#champ de type enum ( FWK_NONE SELECTED DOWNLOADED TAKEN TODOWNLOAD ) ;champ de type enum ( FWK_NONE SELECTED DOWNLOADED TAKEN TODOWNLOAD ) #champ de type number;champ de type number#
+VisualSize#10#30#30#30#30#30#30#20#
+SQL FIELD#ID#PHOTO_NAME#PHOTO_URI#PHOTO_SVG#PHOTO_DATE#PHOTO_DESC#PHOTO_PHOTOSTATE##
+Mandatory#yes#no#no#no#no#no#no#yes#
+Size#20#255#255#255##255#10#20#
+Type#numberid#string#string#string#datetime#string#value#ref1#
+Option#T_JOUEUR######FWK_NONE[0];SELECTED[1];DOWNLOADED[2];TAKEN[3];TODOWNLOAD[4];##
+Option2#
+Unique#yes#######yes#
+I18n#
+Reference from########Joueur.ID#
+Reference to########Joueur.ID#
+Ctrl#
+Req#U##T_JOUEUR#
+Entity#Lieu
+Group#generated_model
+Products#NAME_PRODUCT
+FileName#User020_Lieu
+Admable#No
+Title(fr_FR;en_EN)#Lieu;Lieu
+TabTitle(fr_FR;en_EN)#Lieu;Lieu
+Name#ID#NOM#POSITIONIDENTIFIER#LATITUDE#LONGITUDE#COMPL#STREET#CITY#COUNTRY#
+Module#
+Label(fr_FR;en_EN)#identifier;identifier#nom;nom#positionidentifier;positionidentifier#latitude;latitude#longitude;longitude#compl;compl#street;street#city;city#country;country#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type string;champ de type string#champ de type number;champ de type number#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#
+VisualSize#10#30#15#0#0#0#0#0#0#
+SQL FIELD#ID#NOM##POSITION_LATITUDE#POSITION_LONGITUDE#POSITION_COMPL#POSITION_STREET#POSITION_CITY#POSITION_COUNTRY#
+Mandatory#yes#yes#yes#no#no#no#no#no#no#
+Size#20#255#20#30#30#255#255#255#255#
+Type#numberid#string#ref1#float#float#string#string#string#string#
+Option#T_LIEU##numberid#######
+Option2###
+Unique#yes##yes#######
+I18n#
+Reference from###LieuPosition.ID##
+Reference to###LieuPosition.ID##
+Ctrl#
+Req#0##T_LIEU#
+Entity#LieuPosition
+Group#generated_model
+Products#NAME_PRODUCT
+FileName#User021_LieuPosition
+Admable#No
+Title(fr_FR;en_EN)#LieuPosition;LieuPosition
+TabTitle(fr_FR;en_EN)#LieuPosition;LieuPosition
+Name#ID#LATITUDE#LONGITUDE#COMPL#STREET#CITY#COUNTRY#POSITIONLIEU#
+Module#
+Label(fr_FR;en_EN)#identifier;identifier#latitude;latitude#longitude;longitude#compl;compl#street;street#city;city#country;country#positionlieu#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type float;champ de type float#champ de type float;champ de type float#champ de type string;champ de type string#champ de type string;champ de type string#champ de type string;champ de type string#champ de type string;champ de type string#champ de type number;champ de type number#
+VisualSize#10#15#15#30#30#30#30#20#
+SQL FIELD#ID#POSITION_LATITUDE#POSITION_LONGITUDE#POSITION_COMPL#POSITION_STREET#POSITION_CITY#POSITION_COUNTRY##
+Mandatory#yes#no#no#no#no#no#no#yes#
+Size#20#30#30#255#255#255#255#20#
+Type#numberid#float#float#string#string#string#string#ref1#
+Option#T_LIEU########
+Option2#
+Unique#yes#######yes#
+I18n#
+Reference from########Lieu.ID#
+Reference to########Lieu.ID#
+Ctrl#
+Req#U##T_LIEU#
+Entity#Entrainement
+Group#generated_model
+Products#NAME_PRODUCT
+FileName#User030_Entrainement
+Admable#No
+Title(fr_FR;en_EN)#Entrainement;Entrainement
+TabTitle(fr_FR;en_EN)#Entrainement;Entrainement
+Name#ID#LIEUID#DATEHEURE#
+Module#
+Label(fr_FR;en_EN)#identifier;identifier#lieuidentifier;lieuidentifier#dateheure;dateheure#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type number;champ de type number#champ de type datetime;champ de type datetime#
+VisualSize#10#20#30#
+SQL FIELD#ID#LIEUID#DATEHEURE#
+Mandatory#yes#yes#yes#
+Size#20###
+Type#numberid#ref1#datetime#
+Option#T_ENTRAINEMENT#number##
+Option2####
+Unique#yes###
+I18n#
+Reference from##Lieu.ID###
+Reference to##Lieu.ID###
+Ctrl#
+Req#0##T_ENTRAINEMENT#
+Entity#EntrainJoueur
+Group#generated_model
+Products#NAME_PRODUCT
+FileName#User040_Entrainement-joueurs_Joueur-entrainements
+Admable#No
+Title(fr_FR;en_EN)#EntrainJoueur;EntrainJoueur
+TabTitle(fr_FR;en_EN)#EntrainJoueur;EntrainJoueur
+Name#JOUEURID#ENTRAINEMENTID#
+Module#
+Label(fr_FR;en_EN)#joueurid;joueurid#entrainementid;entrainementid#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type number;champ de type number#
+VisualSize#10#10#
+SQL FIELD#JOUEURID#ENTRAINEMENTID#
+Mandatory#yes#yes#
+Size#20#20#
+Type#ref1#ref1#
+Option#number#number#
+Option2#
+Unique#no#no#
+I18n#
+Reference from#Joueur.ID#Entrainement.ID#
+Reference to#Joueur.ID#Entrainement.ID#
+Ctrl#
+Req#0##T_ENTRAINJOUEUR#

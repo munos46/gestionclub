@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/glistentrainpanel__screenlist1__master"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+
+    <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMListView
+        android:choiceMode="singleChoice"
+        android:id="@+id/vmlistentrainpanelimpl__list__value"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" movalys:mandatory="false"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_create_detailentrainpanel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|end"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content" android:src="@drawable/add"/>
+</android.support.design.widget.CoordinatorLayout>
+<!--commented-generation-start
+
+<?xml version="1.0" encoding="UTF-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/glistentrainpanel__screenlist1__master"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+    <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMListView
+        android:choiceMode="singleChoice"
+        android:id="@+id/vmlistentrainpanelimpl__list__value"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" movalys:mandatory="false"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/button_create_detailentrainpanel"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|end"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp" android:layout_width="wrap_content" android:src="@android:drawable/ic_input_add"/>
+</android.support.design.widget.CoordinatorLayout>
+
+
+commented-generation-start-->

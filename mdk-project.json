@@ -1,0 +1,39 @@
+{
+    "project": {
+        "applicationId": "com.adoliveira.gestionclub",
+        "artifactId": "gestionclub",
+        "groupId": "com.adoliveira.gestionclub",
+        "version": "1.0.0-SNAPSHOT",
+        "mdkVersion": "6.6.0"
+    },
+    "template": {
+        "version": "6.6.0",
+        "name": "Basic",
+        "platforms": [
+            {
+                "name": "android",
+                "groupId": "com.sopragroup.adeuza.movalysfwk.templates.basic",
+                "artifactId": "mdk-android-basic-template",
+                "minTemplateVersion": "6.0.0"
+            },
+            {
+                "name": "ios",
+                "groupId": "com.sopragroup.adeuza.movalysfwk.templates.basic",
+                "artifactId": "mdk-ios-basic-template",
+                "minTemplateVersion": "6.0.0"
+            },
+            {
+                "name": "html5",
+                "groupId": "com.sopragroup.adeuza.movalysfwk.templates.basic",
+                "artifactId": "mdk-html5-basic-template",
+                "minTemplateVersion": "6.2.0"
+            },
+            {
+                "name": "win8",
+                "groupId": "com.sopragroup.adeuza.movalysfwk.templates.basic",
+                "artifactId": "mdk-win8-basic-template",
+                "minTemplateVersion": "6.6.0-SNAPSHOT"
+            }
+        ]
+    }
+}

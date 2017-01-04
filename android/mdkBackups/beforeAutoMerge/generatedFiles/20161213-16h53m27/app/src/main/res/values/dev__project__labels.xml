@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="application_actionmenu_detailentrainscreen">savedetailentrainpanelimpl</string>
+    <string name="button_create_detailentrainpanel">create DetailEntrainPanel</string>
+    <string name="detail__dateHeure__label">Date heure</string>
+    <string name="detail__nom__label">Nom</string>
+    <string name="DetailEntrainScreen">Detail entrain screen</string>
+    <string name="ListEntrainScreen">List entrain screen</string>
+    <string name="vmlistentrainpanelimpl__dateHeure__label">Date heure</string>
+</resources>

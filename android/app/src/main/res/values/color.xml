@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/red_500</color>
+    <color name="colorPrimaryDark">#D32F2F</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="textColorPrimary">#DD000000</color>
+    <color name="textColorSecondary">@color/grey_500</color>
+    <color name="buttonPositive">@color/green_500</color>
+    <color name="buttonNeutre">#e0e0e0</color>
+    <color name="windowBackground">@color/material_grey200</color>
+    <color name="titleBackgroundColor">#ededed</color>
+    <color name="dividerColor">#dcdcdc</color>
+    <color name="grey300">#e0e0e0</color>
+    <color name="graphFirt">@color/material_lightgreen400</color>
+    <color name="graphSecondary">@color/material_teal400</color>
+    <color name="graphThird">@color/material_cyan400</color>
+    <color name="graphBorderFirt">@color/material_green700</color>
+    <color name="graphBorderSecondary">@color/material_teal700</color>
+    <color name="graphBorderThird">@color/material_cyan700</color>
+</resources>

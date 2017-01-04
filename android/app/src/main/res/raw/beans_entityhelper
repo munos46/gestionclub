@@ -1,0 +1,1 @@
+com.model.Entrainement|factory=com.model.EntrainementFactorycom.model.Entrainement|dao=com.dao.EntrainementDaocom.model.Joueur|factory=com.model.JoueurFactorycom.model.Joueur|dao=com.dao.JoueurDaocom.model.Lieu|factory=com.model.LieuFactorycom.model.Lieu|dao=com.dao.LieuDao

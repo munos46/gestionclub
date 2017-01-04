@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<generation date="Dec 15, 2016 11:29:47 AM">
+    <info-save-bean-list>
+        <info-save-bean executionId="generate">
+            <dependency>
+                <artifactId>adjava-android</artifactId>
+                <lastUpdated>0</lastUpdated>
+                <version>6.12.0</version>
+            </dependency>
+            <dependency>
+                <artifactId>mf4mdd-android</artifactId>
+                <lastUpdated>0</lastUpdated>
+                <version>6.6.0</version>
+            </dependency>
+            <dependency>
+                <artifactId>xmiFile</artifactId>
+                <lastUpdated>1481797774036</lastUpdated>
+                <version>Pas de version</version>
+            </dependency>
+            <dependency>
+                <artifactId>adjava-maven-plugin</artifactId>
+                <lastUpdated>0</lastUpdated>
+                <version>6.12.0</version>
+            </dependency>
+        </info-save-bean>
+    </info-save-bean-list>
+    <applied-project-upgraders/>
+</generation>

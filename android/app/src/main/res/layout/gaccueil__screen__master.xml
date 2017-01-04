@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView
+    android:fitsSystemWindows="true"
+    android:id="@+id/gaccueil__screen__master"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content" android:src="@drawable/logo_raf"/>
+
+        <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
+            android:id="@+id/button_navigate_ListEntrainScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/button_navigate_ListEntrainScreen" movalys:activityForResult="com.application.ListEntrainScreen"/>
+    </LinearLayout>
+</ScrollView>
+<!--commented-generation-start
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView android:id="@+id/gaccueil__screen__master"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+    <RelativeLayout android:layout_centerVertical="true"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
+            android:id="@+id/button_navigate_ListEntrainScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/button_navigate_ListEntrainScreen" movalys:activityForResult="com.application.ListEntrainScreen"/>
+    </RelativeLayout>
+</ScrollView>
+
+
+commented-generation-start-->

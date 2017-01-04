@@ -1,0 +1,12 @@
+
+
+******************** CONFLICT FOUND *********************
+The change between the old generation and the new generation is in conflict with a change of the same type done by the user
+ ==> the change between the 2 generations is skipped while the change done by the user is kept.
+
+	- Generation time: 20161215-11h29m48
+	- Type of change: MOVE_NODE
+	- Old node: //string[@name='vmlistentrainpanelimpl__dateHeure__label']
+	- New node: //string[@name='vmlistentrainpanelimpl__dateHeure__label']
+	- Old file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\generatedFiles\20161215-10h20m07\app\src\main\res\values\dev__project__labels.xml
+	- New file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\modifiedFiles\20161215-11h29m48\app\src\main\res\values\dev__project__labels.xml

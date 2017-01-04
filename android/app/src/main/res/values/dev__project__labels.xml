@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="Accueil">Accueil</string>
+    <string name="application_actionmenu_detailentrainscreen">savedetailentrainpanelimpl</string>
+    <string name="button_create_detailentrainpanel">create DetailEntrainPanel</string>
+    <string name="button_navigate_ListEntrainScreen">ListEntrainScreen</string>
+    <string name="detail__dateHeure__label">Date et heure</string>
+    <string name="detail__VMDetailEntrainPanelLieu__label">Lieu</string>
+    <string name="DetailEntrainScreen">Détail entrainement</string>
+    <string name="ListEntrainScreen">Liste des entrainements</string>
+    <string name="lstdetail__nom__label">Nom</string>
+    <string name="seldetail__nom__label">Nom</string>
+    <string name="vmlistentrainpanelimpl__dateHeure__label">Date heure</string>
+    <string name="vmlistentrainpanelimpl__nom__label">Nom</string>
+</resources>
