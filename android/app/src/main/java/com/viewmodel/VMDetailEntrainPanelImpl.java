@@ -60,7 +60,6 @@ public class VMDetailEntrainPanelImpl
 	private ListViewModel<Lieu, VMDetailEntrainPanelLieu> lstVMDetailEntrainPanelLieu = null;
 
 	//@non-generated-start[attributes]
-
 	//@non-generated-end
 
 	/** 

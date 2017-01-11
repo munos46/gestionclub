@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdkapp="http://schemas.android.com/apk/res-auto" xmlns:xalan="http://xml.apache.org/xslt">
+    <item
+        android:icon="@android:drawable/ic_menu_delete"
+        android:id="@+id/actionmenu_detailjoueurscreen_delete"
+        android:orderInCategory="1" mdkapp:showAsAction="ifRoom"/>
+    <item
+        android:icon="@android:drawable/ic_menu_save"
+        android:id="@+id/actionmenu_detailjoueurscreen_save"
+        android:orderInCategory="1" mdkapp:showAsAction="ifRoom"/>
+</menu>

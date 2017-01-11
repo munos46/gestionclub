@@ -614,15 +614,6 @@
             </paths>
         </file>
         <file>
-            <fullName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</fullName>
-            <shortName></shortName>
-            <dirName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</dirName>
-            <injection>false</injection>
-            <paths>
-                <path>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</path>
-            </paths>
-        </file>
-        <file>
             <fullName>app\src\main\res\layout\gdetailentrainpanel__screendetail__master.xml</fullName>
             <shortName></shortName>
             <dirName>app\src\main\res\layout\gdetailentrainpanel__screendetail__master.xml</dirName>
@@ -659,6 +650,24 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\res\layout\gdetailentrainpanel__spinitemvmdetailentrainpanellieu__master.xml</fullName>
             <shortName></shortName>
             <dirName>app\src\main\res\layout\gdetailentrainpanel__spinitemvmdetailentrainpanellieu__master.xml</dirName>
@@ -674,15 +683,6 @@
             <injection>false</injection>
             <paths>
                 <path>app\src\main\res\layout\gdetailentrainscreen__screendetail__master.xml</path>
-            </paths>
-        </file>
-        <file>
-            <fullName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</fullName>
-            <shortName></shortName>
-            <dirName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</dirName>
-            <injection>false</injection>
-            <paths>
-                <path>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</path>
             </paths>
         </file>
         <file>

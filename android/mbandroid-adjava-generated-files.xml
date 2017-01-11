@@ -218,6 +218,42 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\viewmodel\VMDetailJoueurPanelImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMDetailJoueurPanelImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMDetailJoueurPanelImpl.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMListJoueurPanelImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMListJoueurPanelImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMListJoueurPanelImpl.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMListJoueurScreenImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMListJoueurScreenImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMListJoueurScreenImpl.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMDetailJoueurScreenImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMDetailJoueurScreenImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMDetailJoueurScreenImpl.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\viewmodel\VMDetailEntrainScreenImpl.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\viewmodel\VMDetailEntrainScreenImpl.java</dirName>
@@ -254,6 +290,15 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\viewmodel\VMListListJoueurPanelImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMListListJoueurPanelImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMListListJoueurPanelImpl.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\viewmodel\VMDetailEntrainPanelImpl.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\viewmodel\VMDetailEntrainPanelImpl.java</dirName>
@@ -269,6 +314,42 @@
             <injection>false</injection>
             <paths>
                 <path>app\src\main\java\com\viewmodel\VMDetailEntrainPanelLieuImpl.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMDetailJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMDetailJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMDetailJoueurPanel.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMListJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMListJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMListJoueurPanel.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMListJoueurScreen.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMListJoueurScreen.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMListJoueurScreen.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\VMDetailJoueurScreen.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMDetailJoueurScreen.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMDetailJoueurScreen.java</path>
             </paths>
         </file>
         <file>
@@ -308,6 +389,15 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\viewmodel\VMListListJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\VMListListJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\VMListListJoueurPanel.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\viewmodel\VMDetailEntrainPanel.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\viewmodel\VMDetailEntrainPanel.java</dirName>
@@ -335,6 +425,15 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\action\deletedetailjoueurpanel\DeleteDetailJoueurPanelImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\action\deletedetailjoueurpanel\DeleteDetailJoueurPanelImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\action\deletedetailjoueurpanel\DeleteDetailJoueurPanelImpl.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\action\savedetailentrainpanel\SaveDetailEntrainPanelImpl.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\action\savedetailentrainpanel\SaveDetailEntrainPanelImpl.java</dirName>
@@ -350,6 +449,24 @@
             <injection>false</injection>
             <paths>
                 <path>app\src\main\java\com\action\deletedetailentrainpanel\DeleteDetailEntrainPanelImpl.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\action\savedetailjoueurpanel\SaveDetailJoueurPanelImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\action\savedetailjoueurpanel\SaveDetailJoueurPanelImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\action\savedetailjoueurpanel\SaveDetailJoueurPanelImpl.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\action\savedetailjoueurpanel\SaveDetailJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\action\savedetailjoueurpanel\SaveDetailJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\action\savedetailjoueurpanel\SaveDetailJoueurPanel.java</path>
             </paths>
         </file>
         <file>
@@ -371,12 +488,30 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\action\deletedetailjoueurpanel\DeleteDetailJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\action\deletedetailjoueurpanel\DeleteDetailJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\action\deletedetailjoueurpanel\DeleteDetailJoueurPanel.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\application\DetailEntrainScreen.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\application\DetailEntrainScreen.java</dirName>
             <injection>false</injection>
             <paths>
                 <path>app\src\main\java\com\application\DetailEntrainScreen.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\application\DetailJoueurScreen.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\application\DetailJoueurScreen.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\application\DetailJoueurScreen.java</path>
             </paths>
         </file>
         <file>
@@ -389,12 +524,30 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\application\ListJoueurScreen.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\application\ListJoueurScreen.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\application\ListJoueurScreen.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\application\Accueil.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\application\Accueil.java</dirName>
             <injection>false</injection>
             <paths>
                 <path>app\src\main\java\com\application\Accueil.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\viewmodel\AdapterListJoueurPanelImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\viewmodel\AdapterListJoueurPanelImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\viewmodel\AdapterListJoueurPanelImpl.java</path>
             </paths>
         </file>
         <file>
@@ -587,6 +740,24 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\adoliveira\gestionclub\loader\DetailJoueurPanelLoader.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\adoliveira\gestionclub\loader\DetailJoueurPanelLoader.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\adoliveira\gestionclub\loader\DetailJoueurPanelLoader.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\adoliveira\gestionclub\loader\DetailJoueurPanelLoaderImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\adoliveira\gestionclub\loader\DetailJoueurPanelLoaderImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\adoliveira\gestionclub\loader\DetailJoueurPanelLoaderImpl.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\adoliveira\gestionclub\loader\ListEntrainPanelLoader.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\adoliveira\gestionclub\loader\ListEntrainPanelLoader.java</dirName>
@@ -605,6 +776,24 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\adoliveira\gestionclub\loader\ListJoueurPanelLoader.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\adoliveira\gestionclub\loader\ListJoueurPanelLoader.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\adoliveira\gestionclub\loader\ListJoueurPanelLoader.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\adoliveira\gestionclub\loader\ListJoueurPanelLoaderImpl.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\adoliveira\gestionclub\loader\ListJoueurPanelLoaderImpl.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\adoliveira\gestionclub\loader\ListJoueurPanelLoaderImpl.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\res\raw\beans_action</fullName>
             <shortName></shortName>
             <dirName>app\src\main\res\raw\beans_action</dirName>
@@ -614,12 +803,12 @@
             </paths>
         </file>
         <file>
-            <fullName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</fullName>
+            <fullName>app\src\main\res\layout\gdetailjoueurpanel__screendetail__master.xml</fullName>
             <shortName></shortName>
-            <dirName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</dirName>
+            <dirName>app\src\main\res\layout\gdetailjoueurpanel__screendetail__master.xml</dirName>
             <injection>false</injection>
             <paths>
-                <path>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</path>
+                <path>app\src\main\res\layout\gdetailjoueurpanel__screendetail__master.xml</path>
             </paths>
         </file>
         <file>
@@ -629,6 +818,15 @@
             <injection>false</injection>
             <paths>
                 <path>app\src\main\res\layout\gdetailentrainpanel__screendetail__master.xml</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\res\layout\gdetailjoueurscreen__screendetail__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\gdetailjoueurscreen__screendetail__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\gdetailjoueurscreen__screendetail__master.xml</path>
             </paths>
         </file>
         <file>
@@ -659,6 +857,51 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\res\layout\glistjoueurpanel__listitem1__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistjoueurpanel__listitem1__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistjoueurpanel__listitem1__master.xml</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistentrainscreen__screendetail__master.xml</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\res\layout\glistjoueurscreen__screendetail__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistjoueurscreen__screendetail__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistjoueurscreen__screendetail__master.xml</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\res\layout\glistjoueurpanel__screenlist1__master.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\layout\glistjoueurpanel__screenlist1__master.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\layout\glistjoueurpanel__screenlist1__master.xml</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\res\layout\gdetailentrainpanel__spinitemvmdetailentrainpanellieu__master.xml</fullName>
             <shortName></shortName>
             <dirName>app\src\main\res\layout\gdetailentrainpanel__spinitemvmdetailentrainpanellieu__master.xml</dirName>
@@ -674,15 +917,6 @@
             <injection>false</injection>
             <paths>
                 <path>app\src\main\res\layout\gdetailentrainscreen__screendetail__master.xml</path>
-            </paths>
-        </file>
-        <file>
-            <fullName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</fullName>
-            <shortName></shortName>
-            <dirName>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</dirName>
-            <injection>false</injection>
-            <paths>
-                <path>app\src\main\res\layout\glistentrainpanel__listitem1__master.xml</path>
             </paths>
         </file>
         <file>
@@ -704,6 +938,15 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\res\menu\detailjoueurscreen_actions.xml</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\res\menu\detailjoueurscreen_actions.xml</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\res\menu\detailjoueurscreen_actions.xml</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\panel\DetailEntrainPanel.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\panel\DetailEntrainPanel.java</dirName>
@@ -713,12 +956,30 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\main\java\com\panel\DetailJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\panel\DetailJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\panel\DetailJoueurPanel.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\main\java\com\panel\ListEntrainPanel.java</fullName>
             <shortName></shortName>
             <dirName>app\src\main\java\com\panel\ListEntrainPanel.java</dirName>
             <injection>false</injection>
             <paths>
                 <path>app\src\main\java\com\panel\ListEntrainPanel.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\main\java\com\panel\ListJoueurPanel.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\main\java\com\panel\ListJoueurPanel.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\main\java\com\panel\ListJoueurPanel.java</path>
             </paths>
         </file>
         <file>
@@ -740,12 +1001,30 @@
             </paths>
         </file>
         <file>
+            <fullName>app\src\androidTest\java\com\application\DetailJoueurScreenTest.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\androidTest\java\com\application\DetailJoueurScreenTest.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\androidTest\java\com\application\DetailJoueurScreenTest.java</path>
+            </paths>
+        </file>
+        <file>
             <fullName>app\src\androidTest\java\com\application\ListEntrainScreenTest.java</fullName>
             <shortName></shortName>
             <dirName>app\src\androidTest\java\com\application\ListEntrainScreenTest.java</dirName>
             <injection>false</injection>
             <paths>
                 <path>app\src\androidTest\java\com\application\ListEntrainScreenTest.java</path>
+            </paths>
+        </file>
+        <file>
+            <fullName>app\src\androidTest\java\com\application\ListJoueurScreenTest.java</fullName>
+            <shortName></shortName>
+            <dirName>app\src\androidTest\java\com\application\ListJoueurScreenTest.java</dirName>
+            <injection>false</injection>
+            <paths>
+                <path>app\src\androidTest\java\com\application\ListJoueurScreenTest.java</path>
             </paths>
         </file>
         <file>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     android:id="@+id/glistentrainscreen__screendetail__master"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android"
-    android:background="@color/white">
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
 
     <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMMultiSectionFragmentLayout
         android:id="@+id/main__listentrainscreen__visualpanel"

@@ -6,21 +6,21 @@ FileName#User010_Joueur
 Admable#No
 Title(fr_FR;en_EN)#Joueur;Joueur
 TabTitle(fr_FR;en_EN)#Joueur;Joueur
-Name#ID#NOM#PRENOM#DATENAISSANCE#EMAIL#PHOTOIDENTIFIER#NAME#URI#SVG#DATE#DESC#PHOTOSTATE#
+Name#ID#NOM#PRENOM#DATENAISSANCE#EMAIL#TAILLE#POIDS#ADRESSE#COMMUNE#VILLE#PHOTOIDENTIFIER#NAME#URI#SVG#DATE#DESC#PHOTOSTATE#
 Module#
-Label(fr_FR;en_EN)#identifier;identifier#nom;nom#prenom;prenom#datenaissance;datenaissance#email;email#photoidentifier;photoidentifier#name;name#uri;uri#svg;svg#date;date#desc;desc#photostate;photostate#
-Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type string;champ de type string#champ de type string;champ de type string#champ de type datetime;champ de type datetime#champ de type string;champ de type string#champ de type number;champ de type number#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#
-VisualSize#10#30#30#30#30#15#0#0#0#0#0#0#
-SQL FIELD#ID#NOM#PRENOM#DATENAISSANCE#EMAIL##PHOTO_NAME#PHOTO_URI#PHOTO_SVG#PHOTO_DATE#PHOTO_DESC#PHOTO_PHOTOSTATE#
-Mandatory#yes#yes#yes#yes#no#no#no#no#no#no#no#no#
-Size#20#255#255##255#20#255#255#255##255#10#
-Type#numberid#string#string#datetime#string#ref1#string#string#string#datetime#string#value#
-Option#T_JOUEUR#####numberid######FWK_NONE[0];SELECTED[1];DOWNLOADED[2];TAKEN[3];TODOWNLOAD[4];#
-Option2######
-Unique#yes#####yes#######
+Label(fr_FR;en_EN)#identifier;identifier#nom;nom#prenom;prenom#datenaissance;datenaissance#email;email#taille;taille#poids;poids#adresse;adresse#commune;commune#ville;ville#photoidentifier;photoidentifier#name;name#uri;uri#svg;svg#date;date#desc;desc#photostate;photostate#
+Comment(fr_FR;en_EN)#champ de type number;champ de type number#champ de type string;champ de type string#champ de type string;champ de type string#champ de type datetime;champ de type datetime#champ de type string;champ de type string#champ de type float;champ de type float#champ de type float;champ de type float#champ de type string;champ de type string#champ de type string;champ de type string#champ de type string;champ de type string#champ de type number;champ de type number#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#champ hidden;champ hidden#
+VisualSize#10#30#30#30#30#15#15#30#30#30#15#0#0#0#0#0#0#
+SQL FIELD#ID#NOM#PRENOM#DATENAISSANCE#EMAIL#TAILLE#POIDS#ADRESSE#COMMUNE#VILLE##PHOTO_NAME#PHOTO_URI#PHOTO_SVG#PHOTO_DATE#PHOTO_DESC#PHOTO_PHOTOSTATE#
+Mandatory#yes#yes#yes#yes#no#no#no#no#no#no#no#no#no#no#no#no#no#
+Size#20#255#255##255#14#14#255#255#255#20#255#255#255##255#10#
+Type#numberid#string#string#datetime#string#float#float#string#string#string#ref1#string#string#string#datetime#string#value#
+Option#T_JOUEUR##########numberid######FWK_NONE[0];SELECTED[1];DOWNLOADED[2];TAKEN[3];TODOWNLOAD[4];#
+Option2###########
+Unique#yes##########yes#######
 I18n#
-Reference from######JoueurPhoto.ID##
-Reference to######JoueurPhoto.ID##
+Reference from###########JoueurPhoto.ID##
+Reference to###########JoueurPhoto.ID##
 Ctrl#
 Req#0##T_JOUEUR#
 Entity#JoueurPhoto

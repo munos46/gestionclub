@@ -47,7 +47,7 @@ public interface JoueurDao extends EntityDao<Joueur>
 	/**
 	 * Number of fields
 	 */
-	public static final int NB_FIELDS = 5;
+	public static final int NB_FIELDS = 10;
 
 	//@non-generated-start[constants]
 	//@non-generated-end

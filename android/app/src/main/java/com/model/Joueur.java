@@ -161,6 +161,116 @@ public interface Joueur extends MEntity
 	/**
 	 * 
 	 * 
+	 * <p>Attribute TAILLE</p>
+	 * <p> type=double mandatory=false</p>
+
+	 * 
+	 * @return une entité double correspondant à la valeur de l'attribut taille
+	 */
+	public double getTaille();
+
+	/**
+	 * 
+	 *
+	 * <p>Attribute TAILLE</p>
+	 * <p> type=double mandatory=false</p>
+	 *
+	 * @param p_dTaille la valeur à affecter à l'attribut taille
+	 *
+	 */
+	public void setTaille(double p_dTaille);
+
+	/**
+	 * 
+	 * 
+	 * <p>Attribute POIDS</p>
+	 * <p> type=double mandatory=false</p>
+
+	 * 
+	 * @return une entité double correspondant à la valeur de l'attribut poids
+	 */
+	public double getPoids();
+
+	/**
+	 * 
+	 *
+	 * <p>Attribute POIDS</p>
+	 * <p> type=double mandatory=false</p>
+	 *
+	 * @param p_dPoids la valeur à affecter à l'attribut poids
+	 *
+	 */
+	public void setPoids(double p_dPoids);
+
+	/**
+	 * 
+	 * 
+	 * <p>Attribute ADRESSE</p>
+	 * <p> type=String mandatory=false</p>
+
+	 * 
+	 * @return une entité String correspondant à la valeur de l'attribut adresse
+	 */
+	public String getAdresse();
+
+	/**
+	 * 
+	 *
+	 * <p>Attribute ADRESSE</p>
+	 * <p> type=String mandatory=false</p>
+	 *
+	 * @param p_sAdresse la valeur à affecter à l'attribut adresse
+	 *
+	 */
+	public void setAdresse(String p_sAdresse);
+
+	/**
+	 * 
+	 * 
+	 * <p>Attribute COMMUNE</p>
+	 * <p> type=String mandatory=false</p>
+
+	 * 
+	 * @return une entité String correspondant à la valeur de l'attribut commune
+	 */
+	public String getCommune();
+
+	/**
+	 * 
+	 *
+	 * <p>Attribute COMMUNE</p>
+	 * <p> type=String mandatory=false</p>
+	 *
+	 * @param p_sCommune la valeur à affecter à l'attribut commune
+	 *
+	 */
+	public void setCommune(String p_sCommune);
+
+	/**
+	 * 
+	 * 
+	 * <p>Attribute VILLE</p>
+	 * <p> type=String mandatory=false</p>
+
+	 * 
+	 * @return une entité String correspondant à la valeur de l'attribut ville
+	 */
+	public String getVille();
+
+	/**
+	 * 
+	 *
+	 * <p>Attribute VILLE</p>
+	 * <p> type=String mandatory=false</p>
+	 *
+	 * @param p_sVille la valeur à affecter à l'attribut ville
+	 *
+	 */
+	public void setVille(String p_sVille);
+
+	/**
+	 * 
+	 * 
 	 * <p>Attribute </p>
 	 * <p> type=long mandatory=false</p>
 

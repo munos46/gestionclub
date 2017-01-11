@@ -15,74 +15,19 @@
 [INFO]    configuration file : /com/a2a/adjava/android-gradle-config.xml
 [INFO]    configuration file : /com/adeuza/movalysfwk/mf4mdd/config/mf4mdd-android-gradle.xml
 [INFO]    configuration file : /com/adeuza/movalysfwk/mf4mdd/config/mf4mdd-android-mdkfixedlist.xml
-[INFO]    xmi file : d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\commons\modelisation.xml
+[INFO]    xmi file : D:\Projet\gestionclub\commons\modelisation.xml
 [INFO]    debug activated : false
-[WARNING] [MergeProcessor#logConflict] 
-
-******************** CONFLICT FOUND *********************
-The change between the old generation and the new generation is in conflict with a change of the same type done by the user
- ==> the change between the 2 generations is skipped while the change done by the user is kept.
-
-	- Generation time: 20161215-11h29m48
-	- Type of change: ADD_NODE
-	- New node: //string[@name='detail__dateHeure__label']
-	- Old file: null
-	- New file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\modifiedFiles\20161215-11h29m48\app\src\main\res\values\dev__project__labels.xml
-[WARNING] [MergeProcessor#logConflict] 
-
-******************** CONFLICT FOUND *********************
-The change between the old generation and the new generation is in conflict with a change of the same type done by the user
- ==> the change between the 2 generations is skipped while the change done by the user is kept.
-
-	- Generation time: 20161215-11h29m48
-	- Type of change: MOVE_NODE
-	- Old node: //string[@name='detail__VMDetailEntrainPanelLieu__label']
-	- New node: //string[@name='detail__VMDetailEntrainPanelLieu__label']
-	- Old file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\generatedFiles\20161215-10h20m07\app\src\main\res\values\dev__project__labels.xml
-	- New file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\modifiedFiles\20161215-11h29m48\app\src\main\res\values\dev__project__labels.xml
-[WARNING] [MergeProcessor#logConflict] 
-
-******************** CONFLICT FOUND *********************
-The change between the old generation and the new generation is in conflict with a change of the same type done by the user
- ==> the change between the 2 generations is skipped while the change done by the user is kept.
-
-	- Generation time: 20161215-11h29m48
-	- Type of change: ADD_NODE
-	- New node: //string[@name='lstdetail__nom__label']
-	- Old file: null
-	- New file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\modifiedFiles\20161215-11h29m48\app\src\main\res\values\dev__project__labels.xml
-[WARNING] [MergeProcessor#logConflict] 
-
-******************** CONFLICT FOUND *********************
-The change between the old generation and the new generation is in conflict with a change of the same type done by the user
- ==> the change between the 2 generations is skipped while the change done by the user is kept.
-
-	- Generation time: 20161215-11h29m48
-	- Type of change: ADD_NODE
-	- New node: //string[@name='seldetail__nom__label']
-	- Old file: null
-	- New file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\modifiedFiles\20161215-11h29m48\app\src\main\res\values\dev__project__labels.xml
-[WARNING] [MergeProcessor#logConflict] 
-
-******************** CONFLICT FOUND *********************
-The change between the old generation and the new generation is in conflict with a change of the same type done by the user
- ==> the change between the 2 generations is skipped while the change done by the user is kept.
-
-	- Generation time: 20161215-11h29m48
-	- Type of change: MOVE_NODE
-	- Old node: //string[@name='vmlistentrainpanelimpl__dateHeure__label']
-	- New node: //string[@name='vmlistentrainpanelimpl__dateHeure__label']
-	- Old file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\generatedFiles\20161215-10h20m07\app\src\main\res\values\dev__project__labels.xml
-	- New file: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\mdkBackups\beforeAutoMerge\modifiedFiles\20161215-11h29m48\app\src\main\res\values\dev__project__labels.xml
-[ERROR] Formatting failed: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\app\src\androidTest\java\com\application\DetailEntrainScreenTest.java
-[ERROR] Formatting failed: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\app\src\androidTest\java\com\application\ListEntrainScreenTest.java
-[ERROR] Formatting failed: d:\Profiles\adOliveira\Desktop\android - projet\gestionclub\android\app\src\androidTest\java\com\application\AccueilTest.java
+[ERROR] Formatting failed: D:\Projet\gestionclub\android\app\src\androidTest\java\com\application\DetailEntrainScreenTest.java
+[ERROR] Formatting failed: D:\Projet\gestionclub\android\app\src\androidTest\java\com\application\DetailJoueurScreenTest.java
+[ERROR] Formatting failed: D:\Projet\gestionclub\android\app\src\androidTest\java\com\application\ListEntrainScreenTest.java
+[ERROR] Formatting failed: D:\Projet\gestionclub\android\app\src\androidTest\java\com\application\ListJoueurScreenTest.java
+[ERROR] Formatting failed: D:\Projet\gestionclub\android\app\src\androidTest\java\com\application\AccueilTest.java
 [INFO] Java formating done
 [INFO]  End of running
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 11.284 s
-[INFO] Finished at: 2016-12-15T11:29:57+01:00
-[INFO] Final Memory: 19M/366M
+[INFO] Total time: 4.167 s
+[INFO] Finished at: 2017-01-10T15:39:57+01:00
+[INFO] Final Memory: 20M/409M
 [INFO] ------------------------------------------------------------------------

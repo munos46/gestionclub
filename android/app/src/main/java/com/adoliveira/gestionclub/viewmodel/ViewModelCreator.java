@@ -7,15 +7,23 @@ import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ListViewModel;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ListViewModelImpl;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ViewModel;
 import com.model.Entrainement;
+import com.model.Joueur;
 import com.model.Lieu;
 import com.viewmodel.VMDetailEntrainPanel;
 import com.viewmodel.VMDetailEntrainPanelLieu;
 import com.viewmodel.VMDetailEntrainScreen;
 import com.viewmodel.VMDetailEntrainScreenImpl;
+import com.viewmodel.VMDetailJoueurPanel;
+import com.viewmodel.VMDetailJoueurScreen;
+import com.viewmodel.VMDetailJoueurScreenImpl;
 import com.viewmodel.VMListEntrainPanel;
 import com.viewmodel.VMListEntrainScreen;
 import com.viewmodel.VMListEntrainScreenImpl;
+import com.viewmodel.VMListJoueurPanel;
+import com.viewmodel.VMListJoueurScreen;
+import com.viewmodel.VMListJoueurScreenImpl;
 import com.viewmodel.VMListListEntrainPanel;
+import com.viewmodel.VMListListJoueurPanel;
 
 /**
  * 
@@ -155,6 +163,44 @@ public class ViewModelCreator
 	 * Create an empty viewmodel.
 	 * @return An empty view model.
 	 */
+	public VMDetailJoueurPanel createVMDetailJoueurPanel() {
+		return this.createOrUpdateVMDetailJoueurPanel(null, true);
+	}
+
+	/**
+	 * Create and update a view model using a Joueur
+	 * @param p_oData An instance of Joueur
+	 * @param p_bModified true if the entity was modified
+	 * @return The view model representation of an Joueur instance
+	 */
+	public VMDetailJoueurPanel createOrUpdateVMDetailJoueurPanel(final Joueur p_oData, boolean p_bModified) {
+		VMDetailJoueurPanel r_oMasterViewModel = null;
+		if (p_bModified) {
+			r_oMasterViewModel = this.createVM(VMDetailJoueurPanel.class);
+		} else {
+			r_oMasterViewModel = this.getViewModel(VMDetailJoueurPanel.class);
+		}
+		if (p_bModified) {
+			r_oMasterViewModel.updateFromIdentifiable(p_oData);
+		}
+		return r_oMasterViewModel;
+	}
+
+	/**
+	 * Create and update the view model.
+	 * @return The view model
+	 */
+	public VMDetailJoueurScreen createVMDetailJoueurScreen() {
+		final VMDetailJoueurScreen r_oMasterViewModel = this.createVM(VMDetailJoueurScreen.class);
+		r_oMasterViewModel.setVMDetailJoueurPanel(this.createVMDetailJoueurPanel());
+
+		return r_oMasterViewModel;
+	}
+
+	/**
+	 * Create an empty viewmodel.
+	 * @return An empty view model.
+	 */
 	public VMListEntrainPanel createVMListEntrainPanel() {
 		return this.createOrUpdateVMListEntrainPanel(null);
 	}
@@ -185,6 +231,36 @@ public class ViewModelCreator
 	 * Create an empty viewmodel.
 	 * @return An empty view model.
 	 */
+	public VMListJoueurPanel createVMListJoueurPanel() {
+		return this.createOrUpdateVMListJoueurPanel(null);
+	}
+
+	/**
+	 * Create and update a view model using a Joueur
+	 * @param p_oData An instance of Joueur
+	 * @return The view model representation of an Joueur instance
+	 */
+	public VMListJoueurPanel createOrUpdateVMListJoueurPanel(final Joueur p_oData) {
+		final VMListJoueurPanel r_oMasterViewModel = this.createVM(p_oData, VMListJoueurPanel.class);
+		r_oMasterViewModel.updateFromIdentifiable(p_oData);
+		return r_oMasterViewModel;
+	}
+
+	/**
+	 * Create and update the view model.
+	 * @return The view model
+	 */
+	public VMListJoueurScreen createVMListJoueurScreen() {
+		final VMListJoueurScreen r_oMasterViewModel = this.createVM(VMListJoueurScreen.class);
+		r_oMasterViewModel.setVMListListJoueurPanel(this.createVMListListJoueurPanel());
+
+		return r_oMasterViewModel;
+	}
+
+	/**
+	 * Create an empty viewmodel.
+	 * @return An empty view model.
+	 */
 	public VMListListEntrainPanel createVMListListEntrainPanel() {
 		return this.createOrUpdateVMListListEntrainPanel(null);
 	}
@@ -197,6 +273,25 @@ public class ViewModelCreator
 	public VMListListEntrainPanel createOrUpdateVMListListEntrainPanel(final Collection<Entrainement> p_oDatas) {
 		final VMListListEntrainPanel r_oMasterViewModel = this.createVM("com.viewmodel.VMListListEntrainPanel", p_oDatas,
 				VMListListEntrainPanel.class, VMListEntrainPanel.class);
+		return r_oMasterViewModel;
+	}
+
+	/**
+	 * Create an empty viewmodel.
+	 * @return An empty view model.
+	 */
+	public VMListListJoueurPanel createVMListListJoueurPanel() {
+		return this.createOrUpdateVMListListJoueurPanel(null);
+	}
+
+	/**
+	 * Create and update a view model using a collection of Joueur.
+	 * @param p_oDatas A collection of Joueur.
+	 * @return The view model representation of a collection of Joueur.
+	 */
+	public VMListListJoueurPanel createOrUpdateVMListListJoueurPanel(final Collection<Joueur> p_oDatas) {
+		final VMListListJoueurPanel r_oMasterViewModel = this.createVM("com.viewmodel.VMListListJoueurPanel", p_oDatas, VMListListJoueurPanel.class,
+				VMListJoueurPanel.class);
 		return r_oMasterViewModel;
 	}
 

@@ -19,10 +19,13 @@ import java.util.ArrayList;
 
 public class ListeJoueurAdapter extends ArrayAdapter<Joueur> {
 
+    private ArrayList<Joueur> joueurListPresent;
     private ArrayList<Joueur> joueurList;
 
-    public ListeJoueurAdapter(Context pContext, int ptextViewResourceId, ArrayList<Joueur> pJoueurList) {
+    public ListeJoueurAdapter(Context pContext, int ptextViewResourceId, ArrayList<Joueur> pJoueurList, ArrayList<Joueur> pJoueurListPresent) {
         super(pContext, ptextViewResourceId, pJoueurList);
+        this.joueurListPresent = new ArrayList<Joueur>();
+        this.joueurListPresent.addAll(pJoueurListPresent);
         this.joueurList = new ArrayList<Joueur>();
         this.joueurList.addAll(pJoueurList);
     }
@@ -64,8 +67,18 @@ public class ListeJoueurAdapter extends ArrayAdapter<Joueur> {
 
         Joueur joueur = joueurList.get(position);
         holder.joueurName.setText(joueur.getNom().concat(" ").concat(joueur.getPrenom()));
-        holder.estPresent.setText("test");
-        holder.estPresent.setChecked(true);
+
+        // On regarge si le joueur est présent dans la liste
+        boolean estPres = false;
+        for (Joueur unJoueur : joueurListPresent)
+        {
+            if (unJoueur.getNom().equals(joueur.getNom()) && unJoueur.getPrenom().equals(joueur.getPrenom()))
+            {
+                estPres = true;
+            }
+        }
+
+        holder.estPresent.setChecked(estPres);
         holder.estPresent.setTag(joueur);
 
         return convertView;

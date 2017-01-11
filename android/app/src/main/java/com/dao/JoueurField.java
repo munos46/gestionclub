@@ -63,7 +63,32 @@ public enum JoueurField implements Field
 	 * Field EMAIL
 	 * type=TEXT not-null=false
 	 */
-	EMAIL(11)
+	EMAIL(11),
+	/**
+	 * Field TAILLE
+	 * type=REAL not-null=false
+	 */
+	TAILLE(12),
+	/**
+	 * Field POIDS
+	 * type=REAL not-null=false
+	 */
+	POIDS(13),
+	/**
+	 * Field ADRESSE
+	 * type=TEXT not-null=false
+	 */
+	ADRESSE(14),
+	/**
+	 * Field COMMUNE
+	 * type=TEXT not-null=false
+	 */
+	COMMUNE(15),
+	/**
+	 * Field VILLE
+	 * type=TEXT not-null=false
+	 */
+	VILLE(16)
 	//@non-generated-start[enumeration]
 	//@non-generated-end
 	;

@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android"
-    android:background="@color/white">
+    android:background="@color/white"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
 
     <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMMultiSectionFragmentLayout
         android:id="@+id/main__detailentrainscreen__visualpanel"

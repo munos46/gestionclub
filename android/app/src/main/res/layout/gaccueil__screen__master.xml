@@ -24,6 +24,15 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/button_navigate_ListEntrainScreen" movalys:activityForResult="com.application.ListEntrainScreen"/>
+
+        <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
+            android:id="@+id/button_navigate_ListJoueurScreen"
+            android:layout_below="@id/button_navigate_ListEntrainScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/button_navigate_ListJoueurScreen" movalys:activityForResult="com.application.ListJoueurScreen"/>
     </LinearLayout>
 </ScrollView>
 <!--commented-generation-start
@@ -42,6 +51,13 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/button_navigate_ListEntrainScreen" movalys:activityForResult="com.application.ListEntrainScreen"/>
+        <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
+            android:id="@+id/button_navigate_ListJoueurScreen"
+            android:layout_below="@id/button_navigate_ListEntrainScreen"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/button_navigate_ListJoueurScreen" movalys:activityForResult="com.application.ListJoueurScreen"/>
     </RelativeLayout>
 </ScrollView>
 

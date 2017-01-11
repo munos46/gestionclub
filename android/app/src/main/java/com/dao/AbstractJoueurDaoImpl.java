@@ -123,7 +123,8 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 		selectQuery = new SqlQuery();
 		selectQuery.addFieldToSelect(JoueurDao.ALIAS_NAME, JoueurField.ID, JoueurField.NOM, JoueurField.PRENOM, JoueurField.DATENAISSANCE,
 				JoueurField.PHOTO_NAME, JoueurField.PHOTO_URI, JoueurField.PHOTO_SVG, JoueurField.PHOTO_DATE, JoueurField.PHOTO_DESC,
-				JoueurField.PHOTO_PHOTOSTATE, JoueurField.EMAIL);
+				JoueurField.PHOTO_PHOTOSTATE, JoueurField.EMAIL, JoueurField.TAILLE, JoueurField.POIDS, JoueurField.ADRESSE, JoueurField.COMMUNE,
+				JoueurField.VILLE);
 		selectQuery.addToFrom(JoueurDao.TABLE_NAME, JoueurDao.ALIAS_NAME);
 
 		countQuery = new SqlQuery();
@@ -143,6 +144,11 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 		insertQuery.addBindedField(JoueurField.PHOTO_DESC);
 		insertQuery.addBindedField(JoueurField.PHOTO_PHOTOSTATE);
 		insertQuery.addBindedField(JoueurField.EMAIL);
+		insertQuery.addBindedField(JoueurField.TAILLE);
+		insertQuery.addBindedField(JoueurField.POIDS);
+		insertQuery.addBindedField(JoueurField.ADRESSE);
+		insertQuery.addBindedField(JoueurField.COMMUNE);
+		insertQuery.addBindedField(JoueurField.VILLE);
 
 		updateQuery = new SqlUpdate(JoueurDao.TABLE_NAME);
 
@@ -157,6 +163,11 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 		updateQuery.addBindedField(JoueurField.PHOTO_DESC);
 		updateQuery.addBindedField(JoueurField.PHOTO_PHOTOSTATE);
 		updateQuery.addBindedField(JoueurField.EMAIL);
+		updateQuery.addBindedField(JoueurField.TAILLE);
+		updateQuery.addBindedField(JoueurField.POIDS);
+		updateQuery.addBindedField(JoueurField.ADRESSE);
+		updateQuery.addBindedField(JoueurField.COMMUNE);
+		updateQuery.addBindedField(JoueurField.VILLE);
 
 		deleteQuery = new SqlDelete(JoueurDao.TABLE_NAME);
 
@@ -1289,6 +1300,11 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 			r_oJoueur.setDateNaissance(p_oResultSetReader.getTimestamp());
 			r_oJoueur.setPhoto(com.adeuza.movalysfwk.mobile.mf4mjcommons.model.MPhotoHelper.readResultSet(p_oResultSetReader));
 			r_oJoueur.setEmail(p_oResultSetReader.getString());
+			r_oJoueur.setTaille(p_oResultSetReader.getDouble());
+			r_oJoueur.setPoids(p_oResultSetReader.getDouble());
+			r_oJoueur.setAdresse(p_oResultSetReader.getString());
+			r_oJoueur.setCommune(p_oResultSetReader.getString());
+			r_oJoueur.setVille(p_oResultSetReader.getString());
 			if (p_oCascadeSet.contains(JoueurCascade.ENTRAINEMENTS)) {
 				DaoQuery oDaoQuery = this.entrainementDao.getSelectDaoQuery();
 				r_oJoueur.setEntrainements(this.entrainementDao.getListEntrainementByJoueur(r_oJoueur.getId(), oDaoQuery, p_oCascadeSet,
@@ -1332,6 +1348,11 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 			r_oJoueur.setDateNaissance(p_oResultSetReader.getTimestamp());
 			r_oJoueur.setPhoto(com.adeuza.movalysfwk.mobile.mf4mjcommons.model.MPhotoHelper.readResultSet(p_oResultSetReader));
 			r_oJoueur.setEmail(p_oResultSetReader.getString());
+			r_oJoueur.setTaille(p_oResultSetReader.getDouble());
+			r_oJoueur.setPoids(p_oResultSetReader.getDouble());
+			r_oJoueur.setAdresse(p_oResultSetReader.getString());
+			r_oJoueur.setCommune(p_oResultSetReader.getString());
+			r_oJoueur.setVille(p_oResultSetReader.getString());
 
 			if (p_oCascadeSet.contains(JoueurCascade.ENTRAINEMENTS) && r_oJoueur.getEntrainements() == null) {
 				r_oJoueur.setEntrainements(new ArrayList<Entrainement>());
@@ -1360,6 +1381,11 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 		p_oStatement.bindTimestamp(p_oJoueur.getDateNaissance());
 		com.adeuza.movalysfwk.mobile.mf4mjcommons.model.MPhotoHelper.bindToStatement(p_oJoueur.getPhoto(), p_oStatement);
 		p_oStatement.bindString(p_oJoueur.getEmail());
+		p_oStatement.bindDouble(p_oJoueur.getTaille());
+		p_oStatement.bindDouble(p_oJoueur.getPoids());
+		p_oStatement.bindString(p_oJoueur.getAdresse());
+		p_oStatement.bindString(p_oJoueur.getCommune());
+		p_oStatement.bindString(p_oJoueur.getVille());
 
 	}
 
@@ -1378,6 +1404,11 @@ public abstract class AbstractJoueurDaoImpl extends AbstractEntityDao<Joueur> im
 		p_oStatement.bindTimestamp(p_oJoueur.getDateNaissance());
 		com.adeuza.movalysfwk.mobile.mf4mjcommons.model.MPhotoHelper.bindToStatement(p_oJoueur.getPhoto(), p_oStatement);
 		p_oStatement.bindString(p_oJoueur.getEmail());
+		p_oStatement.bindDouble(p_oJoueur.getTaille());
+		p_oStatement.bindDouble(p_oJoueur.getPoids());
+		p_oStatement.bindString(p_oJoueur.getAdresse());
+		p_oStatement.bindString(p_oJoueur.getCommune());
+		p_oStatement.bindString(p_oJoueur.getVille());
 		p_oStatement.bindLong(p_oJoueur.getOldId());
 
 	}

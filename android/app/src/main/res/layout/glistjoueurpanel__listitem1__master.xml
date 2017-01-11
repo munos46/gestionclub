@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GridLayout
+    android:id="@+id/glistjoueurpanel__listitem1__master"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_padding"
+    android:paddingLeft="@dimen/list_padding_top"
+    android:paddingRight="@dimen/list_padding_top"
+    android:paddingTop="@dimen/activity_vertical_padding"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+
+    <ImageView
+        android:src="@drawable/contact"/>
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/vmlistjoueurpanelimpl__nom__value"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:maxLength="255"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/list_padding_top"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/textColorPrimary"
+        />
+
+    <TextView
+        android:focusable="false"
+        android:id="@+id/vmlistjoueurpanelimpl__prenom__value"
+        android:layout_below="@id/vmlistjoueurpanelimpl__nom__value"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:maxLength="255"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_vertical_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/textColorPrimary"
+        />
+</GridLayout>
