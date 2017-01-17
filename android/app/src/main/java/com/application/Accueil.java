@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,10 +40,12 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import jxl.Workbook;
 import jxl.WorkbookSettings;
 import jxl.format.Alignment;
+import jxl.format.Orientation;
 import jxl.write.Label;
 import jxl.write.WritableCellFormat;
 import jxl.write.WritableFont;
@@ -122,7 +125,7 @@ public class Accueil
 			myFirstWbook = Workbook.createWorkbook(new File(dir, "test.xls"));
 
 			// create an Excel sheet
-			WritableSheet excelSheet = myFirstWbook.createSheet("Décembre 1", 0);
+			WritableSheet excelSheet = myFirstWbook.createSheet("Entrainement", 0);
 
 			// Récupération de la liste des entrainements
 			EntrainementDao entrainementDao = BeanLoader.getInstance().getBean(EntrainementDao.class);
@@ -138,7 +141,7 @@ public class Accueil
 
 			List<Joueur> listJoueur = joueurDao.getListJoueur(oQuery,context);
 
-			int posJoueur = 0;
+			int posJoueur = 1;
 			for (Joueur unJoueur : listJoueur)
 			{
 				Label label = new Label(0, posJoueur, unJoueur.getNom().concat(" ").concat(unJoueur.getPrenom()));
@@ -149,8 +152,30 @@ public class Accueil
 
 			List<Entrainement> listEntrainement = entrainementDao.getListEntrainement(CascadeSet.of(EntrainementCascade.LIEU, EntrainementCascade.JOUEUR, EntrainementCascade.JOUEURS), context);
 
+			int indEntrain = 1;
+			for (Entrainement unEntrainement : listEntrainement)
+			{
+				WritableCellFormat format = new WritableCellFormat();
+				format.setOrientation(Orientation.MINUS_90);
+
+				Label label = new Label(indEntrain, 0, new SimpleDateFormat("dd/MM/yyyy HH:mm").format(unEntrainement.getDateHeure()), format);
+
+				excelSheet.addCell(label);
+
+				// Pour tous les joueurs présents, on met une petite X pour dire que c'est ok
+				for (Joueur unJouPres : unEntrainement.getJoueurs())
+				{
+					Label label2 = new Label(indEntrain, mapPositionJoueur.get(unJouPres.getNom().concat(unJouPres.getPrenom())), "X" );
+					excelSheet.addCell(label2);
+				}
+
+				indEntrain++;
+			}
+
 			myFirstWbook.write();
 
+			context.endTransaction();
+			context.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -171,7 +196,18 @@ public class Accueil
 			}
 		}
 
+		Toast.makeText(getApplicationContext(), "Export Excel effectué",Toast.LENGTH_LONG).show();
 
+	}
+
+	private static void addCell(WritableSheet sheet,
+								Orientation orientation,
+								int col, int row, String desc) throws WriteException {
+
+		WritableCellFormat format = new WritableCellFormat();
+		format.setOrientation(orientation);
+		Label label = new Label(col, row, desc, format);
+		sheet.addCell(label);
 	}
 	//@non-generated-end
 }

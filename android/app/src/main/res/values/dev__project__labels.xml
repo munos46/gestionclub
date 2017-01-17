@@ -5,8 +5,8 @@
     <string name="application_actionmenu_detailjoueurscreen">savedetailjoueurpanelimpl</string>
     <string name="button_create_detailentrainpanel">create DetailEntrainPanel</string>
     <string name="button_create_detailjoueurpanel">create DetailJoueurPanel</string>
-    <string name="button_navigate_ListEntrainScreen">ListEntrainScreen</string>
-    <string name="button_navigate_ListJoueurScreen">ListJoueurScreen</string>
+    <string name="button_navigate_ListEntrainScreen">Liste des entrainements</string>
+    <string name="button_navigate_ListJoueurScreen">Liste des joueurs</string>
     <string name="detail__dateHeure__label">Date et heure</string>
     <string name="detail__VMDetailEntrainPanelLieu__label">Lieu</string>
     <string name="DetailEntrainScreen">Détail entrainement</string>

@@ -10,7 +10,9 @@
     <LinearLayout
         android:layout_centerVertical="true"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:orientation="vertical">
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_marginLeft="@dimen/activity_vertical_padding"
+        android:layout_marginRight="@dimen/activity_vertical_padding">
         <ImageView
             android:layout_gravity="center"
             android:layout_height="wrap_content"
@@ -18,23 +20,27 @@
             android:layout_width="wrap_content" android:src="@drawable/logo_raf"/>
 
         <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
+            android:drawableLeft="@drawable/calendar"
             android:id="@+id/button_navigate_ListEntrainScreen"
+            android:gravity="center|center_vertical"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:text="@string/button_navigate_ListEntrainScreen" movalys:activityForResult="com.application.ListEntrainScreen"/>
 
         <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
+            android:drawableLeft="@drawable/joueur"
+            android:gravity="center|center_vertical"
             android:id="@+id/button_navigate_ListJoueurScreen"
             android:layout_below="@id/button_navigate_ListEntrainScreen"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:text="@string/button_navigate_ListJoueurScreen" movalys:activityForResult="com.application.ListJoueurScreen"/>
 
         <Button
+            android:drawableLeft="@drawable/export"
+            android:gravity="center|center_vertical"
             android:id="@+id/export_excel"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
