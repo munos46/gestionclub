@@ -20,9 +20,9 @@
     <string name="detailjoueur__prenom__label">Prenom</string>
     <string name="detailjoueur__taille__label">Taille</string>
     <string name="detailjoueur__ville__label">Ville</string>
-    <string name="DetailJoueurScreen">Detail joueur screen</string>
+    <string name="DetailJoueurScreen">Detail du joueur</string>
     <string name="ListEntrainScreen">Liste des entrainements</string>
-    <string name="ListJoueurScreen">List joueur screen</string>
+    <string name="ListJoueurScreen">Liste des joueurs</string>
     <string name="lstdetail__nom__label">Nom</string>
     <string name="seldetail__nom__label">Nom</string>
     <string name="vmlistentrainpanelimpl__dateHeure__label">Date heure</string>

@@ -105,8 +105,6 @@ public class Accueil
 			}
 		});
 
-
-
 		//@non-generated-end
 	}
 

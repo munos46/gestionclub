@@ -8,9 +8,22 @@
     <ScrollView
         android:id="@+id/gdetailjoueurpanel__screendetailscroll__visualpanel"
         android:layout_height="match_parent" android:layout_width="match_parent">
-        <RelativeLayout
+        <GridLayout
             android:id="@+id/gdetailjoueurpanel__screendetail__visualpanel"
-            android:layout_height="match_parent" android:layout_width="match_parent">
+            android:layout_height="match_parent" android:layout_width="match_parent"
+            android:columnCount="2">
+
+            <com.soprasteria.movalysmdk.widget.media.MDKRichMedia
+                android:id="@+id/detailjoueur__photo__edit"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_columnSpan="2"
+                mdk:thumbnailHeight="200dp" mdk:thumbnailWidth="200dp"/>
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/user"/>
 
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__nom__edit"
@@ -19,6 +32,11 @@
                 android:maxLength="255"
                 mdk:hint="@string/detailjoueur__nom__label"
                 mdk:label="@string/detailjoueur__nom__label" mdk:mandatory="true"/>
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/user"/>
 
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__prenom__edit"
@@ -29,6 +47,11 @@
                 mdk:hint="@string/detailjoueur__prenom__label"
                 mdk:label="@string/detailjoueur__prenom__label" mdk:mandatory="true"/>
 
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/calendar"/>
+
             <com.soprasteria.movalysmdk.widget.basic.MDKRichDate
                 android:id="@+id/detailjoueur__dateNaissance__edit"
                 android:layout_below="@id/detailjoueur__prenom__edit"
@@ -37,64 +60,80 @@
                 mdk:hint="@string/detailjoueur__dateNaissance__label"
                 mdk:label="@string/detailjoueur__dateNaissance__label" mdk:mandatory="true"/>
 
-            <com.soprasteria.movalysmdk.widget.media.MDKRichMedia
-                android:id="@+id/detailjoueur__photo__edit"
-                android:layout_below="@id/detailjoueur__dateNaissance__edit"
+            <ImageView
                 android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                mdk:label="@string/detailjoueur__photo__label"
-                mdk:thumbnailHeight="100dp" mdk:thumbnailWidth="100dp"/>
+                android:layout_width="wrap_content"
+                android:src="@drawable/email"/>
 
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEmail
                 android:id="@+id/detailjoueur__email__edit"
-                android:layout_below="@id/detailjoueur__photo__edit"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:maxLength="255"
                 mdk:hint="@string/detailjoueur__email__label"
                 mdk:label="@string/detailjoueur__email__label" mdk:mandatory="false"/>
 
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/scale"/>
+
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__taille__edit"
                 android:inputType="numberDecimal"
-                android:layout_below="@id/detailjoueur__email__edit"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:maxLength="14"
                 mdk:hint="@string/detailjoueur__taille__label"
                 mdk:label="@string/detailjoueur__taille__label" mdk:mandatory="false"/>
 
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/scale"/>
+
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__poids__edit"
                 android:inputType="numberDecimal"
-                android:layout_below="@id/detailjoueur__taille__edit"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:maxLength="14"
                 mdk:hint="@string/detailjoueur__poids__label"
                 mdk:label="@string/detailjoueur__poids__label" mdk:mandatory="false"/>
 
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/position"/>
+
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__adresse__edit"
-                android:layout_below="@id/detailjoueur__poids__edit"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:maxLength="255"
                 mdk:hint="@string/detailjoueur__adresse__label"
                 mdk:label="@string/detailjoueur__adresse__label" mdk:mandatory="false"/>
 
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/position"/>
+
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__commune__edit"
-                android:layout_below="@id/detailjoueur__adresse__edit"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:maxLength="255"
                 mdk:hint="@string/detailjoueur__commune__label"
                 mdk:label="@string/detailjoueur__commune__label" mdk:mandatory="false"/>
 
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/position"/>
+
             <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
                 android:id="@+id/detailjoueur__ville__edit"
-                android:layout_below="@id/detailjoueur__commune__edit"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:maxLength="255"
@@ -115,6 +154,6 @@
                 android:layout_toRightOf="@id/button_SaveDetailJoueurPanel"
                 android:layout_width="wrap_content"
                 android:src="@drawable/ic_btn_delete" movalys:action="com.action.deletedetailjoueurpanel.DeleteDetailJoueurPanel"/>
-        </RelativeLayout>
+        </GridLayout>
     </ScrollView>
 </RelativeLayout>
