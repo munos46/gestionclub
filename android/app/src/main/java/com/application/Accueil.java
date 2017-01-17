@@ -128,6 +128,8 @@ public class Accueil
 			// create an Excel sheet
 			WritableSheet excelSheet = myFirstWbook.createSheet("Entrainement", 0);
 
+			excelSheet.setColumnView(0, 25);
+
 			// Récupération de la liste des entrainements
 			EntrainementDao entrainementDao = BeanLoader.getInstance().getBean(EntrainementDao.class);
 			JoueurDao joueurDao = BeanLoader.getInstance().getBean(JoueurDao.class);
@@ -162,6 +164,7 @@ public class Accueil
 			{
 				WritableCellFormat format = new WritableCellFormat();
 				format.setOrientation(Orientation.MINUS_90);
+				format.setAlignment(Alignment.CENTRE);
 
 				Label label = new Label(indEntrain, 0, new SimpleDateFormat("dd/MM/yyyy HH:mm").format(unEntrainement.getDateHeure()), format);
 
@@ -170,7 +173,9 @@ public class Accueil
 				// Pour tous les joueurs présents, on met une petite X pour dire que c'est ok
 				for (Joueur unJouPres : unEntrainement.getJoueurs())
 				{
-					Label label2 = new Label(indEntrain, mapPositionJoueur.get(unJouPres.getNom().concat(unJouPres.getPrenom())), "X" );
+					WritableCellFormat formatX = new WritableCellFormat();
+					formatX.setAlignment(Alignment.CENTRE);
+					Label label2 = new Label(indEntrain, mapPositionJoueur.get(unJouPres.getNom().concat(unJouPres.getPrenom())), "X", formatX );
 					excelSheet.addCell(label2);
 				}
 
