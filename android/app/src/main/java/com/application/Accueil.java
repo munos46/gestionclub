@@ -26,6 +26,7 @@ import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderAsc;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderSet;
 import com.adoliveira.gestionclub.R;
 import com.dao.EntrainementDao;
+import com.dao.EntrainementField;
 import com.dao.JoueurDao;
 import com.dao.JoueurField;
 import com.model.Entrainement;
@@ -150,7 +151,11 @@ public class Accueil
 				posJoueur++;
 			}
 
-			List<Entrainement> listEntrainement = entrainementDao.getListEntrainement(CascadeSet.of(EntrainementCascade.LIEU, EntrainementCascade.JOUEUR, EntrainementCascade.JOUEURS), context);
+			DaoQuery oQueryEntrain = entrainementDao.getSelectDaoQuery();
+			oQueryEntrain.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(EntrainementField.DATEHEURE)));
+
+			List<Entrainement> listEntrainement = entrainementDao.getListEntrainement(oQueryEntrain, CascadeSet.of(EntrainementCascade.LIEU,
+					EntrainementCascade.JOUEUR, EntrainementCascade.JOUEURS), context);
 
 			int indEntrain = 1;
 			for (Entrainement unEntrainement : listEntrainement)
