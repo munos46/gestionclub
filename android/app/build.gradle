@@ -88,6 +88,9 @@ dependencies {
     // spinner
     compile ('com.github.ganfra:material-spinner:1.1.1')
 
+    // Export Excel
+    compile "net.sourceforge.jexcelapi:jxl:2.6.10"
+
     //to run test: ./gradlew connectedAndroidTest
     androidTestCompile "com.android.support.test.espresso:espresso-core:2.2.1"
     androidTestCompile "com.android.support:support-annotations:$appcompatv7Version"

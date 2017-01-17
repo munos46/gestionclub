@@ -29,6 +29,8 @@ import com.viewmodel.VMListJoueurScreen;
 import com.viewmodel.VMListJoueurScreenImpl;
 import com.viewmodel.VMListListJoueurPanel;
 import android.content.Intent;
+import android.view.Window;
+import android.view.WindowManager;
 
 /**
  * 
@@ -58,7 +60,12 @@ public class ListJoueurScreen
 	@Override
 	protected void doAfterSetContentView() {
 		super.doAfterSetContentView();
-		//@non-generated-start[do-after-set-content-view][X]
+		//@non-generated-start[do-after-set-content-view]
+		if (android.os.Build.VERSION.SDK_INT >= 21) {
+			Window window = this.getWindow();
+			window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+			window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+		}
 		//@non-generated-end
 	}
 

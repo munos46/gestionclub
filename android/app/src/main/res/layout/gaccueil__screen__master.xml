@@ -33,6 +33,12 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/button_navigate_ListJoueurScreen" movalys:activityForResult="com.application.ListJoueurScreen"/>
+
+        <Button
+            android:id="@+id/export_excel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Export excel"/>
     </LinearLayout>
 </ScrollView>
 <!--commented-generation-start
