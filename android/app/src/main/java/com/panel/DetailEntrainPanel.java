@@ -58,7 +58,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import fr.ganfra.materialspinner.MaterialSpinner;
 
@@ -82,6 +85,7 @@ public class DetailEntrainPanel
 	//@non-generated-start[attributes]
 	ArrayList<Joueur> listeJoueur;
 	private ViewGroup aView;
+	private static int nbJoueur;
 
 	//@non-generated-end
 
@@ -171,6 +175,11 @@ public class DetailEntrainPanel
 
 		this.listeJoueur = new ArrayList<>();
 		this.listeJoueur.addAll(entrainement.getJoueurs());
+		nbJoueur = this.listeJoueur.size();
+
+
+		final TextView nbPersonne = (TextView) aView.findViewById(R.id.nbPerPresente);
+		nbPersonne.setText(String.valueOf(nbJoueur).concat(" personne(s) sélectionnée(s)"));
 
 		//create an ArrayAdaptar from the String Array
 		JoueurDao joueurDao = BeanLoader.getInstance().getBean(JoueurDao.class);
@@ -198,44 +207,6 @@ public class DetailEntrainPanel
 
 		// Assign adapter to ListView
 		listView.setAdapter(adapter);
-
-		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-			public void onItemClick(AdapterView<?> parent, View view,
-									int position, long id) {
-				CheckBox estPresent =	(CheckBox) view.findViewById(R.id.estPresent);
-				Joueur joueur = (Joueur) parent.getItemAtPosition(position);
-				MContextFactory oMContextFactory = (MContextFactory) BeanLoader.getInstance().getBean(MContextFactory.class);
-				MContext context = oMContextFactory.createContext();
-
-				EntrainJoueurDao entrainJoueurDao = BeanLoader.getInstance().getBean(EntrainJoueurDao.class);
-
-				if (estPresent.isChecked())
-				{
-					estPresent.setChecked(false);
-					try {
-						entrainJoueurDao.deleteEntrainJoueur(joueur.getId(),entrainement.getId(), context);
-					} catch (DaoException e) {
-						e.printStackTrace();
-					}
-
-					context.endTransaction();
-					context.close();
-				}
-				else
-				{
-					estPresent.setChecked(true);
-					try {
-						entrainJoueurDao.saveEntrainJoueur(joueur.getId(),entrainement.getId(), context);
-					} catch (DaoException e) {
-						e.printStackTrace();
-					}
-
-					context.endTransaction();
-					context.close();
-				}
-			}
-		});
-
 
 //@non-generated-end
 		}

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import com.adoliveira.gestionclub.R;
@@ -48,18 +49,6 @@ public class ListeJoueurAdapter extends ArrayAdapter<Joueur> {
             holder.joueurName = (TextView) convertView.findViewById(R.id.nameJoueur);
             holder.estPresent = (CheckBox) convertView.findViewById(R.id.estPresent);
             convertView.setTag(holder);
-
-//            holder.name.setOnClickListener( new View.OnClickListener() {
-//                public void onClick(View v) {
-//                    CheckBox cb = (CheckBox) v ;
-//                    Country country = (Country) cb.getTag();
-//                    Toast.makeText(getApplicationContext(),
-//                            "Clicked on Checkbox: " + cb.getText() +
-//                                    " is " + cb.isChecked(),
-//                            Toast.LENGTH_LONG).show();
-//                    country.setSelected(cb.isChecked());
-//                }
-//            });
         }
         else {
             holder = (ViewHolder) convertView.getTag();
@@ -79,8 +68,6 @@ public class ListeJoueurAdapter extends ArrayAdapter<Joueur> {
         }
 
         holder.estPresent.setChecked(estPres);
-        holder.estPresent.setTag(joueur);
-
         return convertView;
     }
 }

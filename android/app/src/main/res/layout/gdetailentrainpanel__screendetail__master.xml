@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout
-    android:id="@+id/gdetailentrainpanel__screendetail__master"
+<RelativeLayout android:id="@+id/gdetailentrainpanel__screendetail__master"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:mdk="http://schemas.android.com/apk/res-auto">
+    xmlns:mdk="http://schemas.android.com/apk/res-auto">
     <LinearLayout
         android:id="@+id/gdetailentrainpanel__screendetail__visualpanel"
         android:layout_height="match_parent"
@@ -30,27 +29,37 @@
             mdk:hint="@string/detail__VMDetailEntrainPanelLieu__label"
             mdk:label="@string/detail__VMDetailEntrainPanelLieu__label" mdk:mandatory="true"/>
 
-       <!-- <fr.ganfra.materialspinner.MaterialSpinner
-            android:id="@+id/detail__VMDetailEntrainPanelLieu__edit"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            app:ms_alignLabels="false"
-            app:ms_arrowColor="@color/textColorSecondary"
-            app:ms_arrowSize="16dp"
-            app:ms_baseColor="@color/textColorSecondary"
-            app:ms_enableErrorLabel="false"
-            app:ms_enableFloatingLabel="true"
-            app:ms_errorColor="@color/red"
-            app:ms_floatingLabelColor="@color/textColorPrimary"
-            app:ms_floatingLabelText="@string/detail__VMDetailEntrainPanelLieu__label"
-            app:ms_highlightColor="@color/colorAccent"
-            app:ms_hint="@string/detail__VMDetailEntrainPanelLieu__label"
-            app:ms_hintColor="@color/textColorSecondary"
-            app:ms_multiline="false" app:ms_thickness="2dp"/>-->
+        <!-- <fr.ganfra.materialspinner.MaterialSpinner
+             android:id="@+id/detail__VMDetailEntrainPanelLieu__edit"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             app:ms_alignLabels="false"
+             app:ms_arrowColor="@color/textColorSecondary"
+             app:ms_arrowSize="16dp"
+             app:ms_baseColor="@color/textColorSecondary"
+             app:ms_enableErrorLabel="false"
+             app:ms_enableFloatingLabel="true"
+             app:ms_errorColor="@color/red"
+             app:ms_floatingLabelColor="@color/textColorPrimary"
+             app:ms_floatingLabelText="@string/detail__VMDetailEntrainPanelLieu__label"
+             app:ms_highlightColor="@color/colorAccent"
+             app:ms_hint="@string/detail__VMDetailEntrainPanelLieu__label"
+             app:ms_hintColor="@color/textColorSecondary"
+             app:ms_multiline="false" app:ms_thickness="2dp"/>-->
+
         <View
             android:background="@color/material_grey200"
             android:layout_height="1dp"
-            android:layout_marginTop="@dimen/activity_vertical_padding" android:layout_width="match_parent"/>
+            android:layout_width="wrap_content"/>
+        <TextView
+            android:id="@+id/nbPerPresente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <View
+            android:background="@color/material_grey200"
+            android:layout_height="1dp"
+            android:layout_width="wrap_content"/>
         <ListView
             android:divider="@null"
             android:dividerHeight="0dp"
@@ -74,53 +83,53 @@
                 android:src="@drawable/ic_btn_delete" movalys:action="com.action.deletedetailentrainpanel.DeleteDetailEntrainPanel"/> -->
     </LinearLayout>
 </RelativeLayout>
-<!--commented-generation-start
+    <!--commented-generation-start
 
-<?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout
-    android:id="@+id/gdetailentrainpanel__screendetail__master"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
-    <ScrollView
-        android:id="@+id/gdetailentrainpanel__screendetailscroll__visualpanel"
-        android:layout_height="match_parent" android:layout_width="match_parent">
-        <RelativeLayout
-            android:id="@+id/gdetailentrainpanel__screendetail__visualpanel"
+    <?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout
+        android:id="@+id/gdetailentrainpanel__screendetail__master"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+        <ScrollView
+            android:id="@+id/gdetailentrainpanel__screendetailscroll__visualpanel"
             android:layout_height="match_parent" android:layout_width="match_parent">
-            <com.soprasteria.movalysmdk.widget.basic.MDKRichDateTime
-                android:id="@+id/detail__dateHeure__edit"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                mdk:hint="@string/detail__dateHeure__label"
-                mdk:label="@string/detail__dateHeure__label" mdk:mandatory="true"/>
-            <com.soprasteria.movalysmdk.widget.spinner.MDKRichSpinner
-                android:id="@+id/detail__VMDetailEntrainPanelLieu__edit"
-                android:layout_below="@id/detail__dateHeure__edit"
-                android:layout_height="wrap_content"
-                android:layout_width="match_parent"
-                mdk:hasBlankRow="true"
-                mdk:hint="@string/detail__VMDetailEntrainPanelLieu__label"
-                mdk:label="@string/detail__VMDetailEntrainPanelLieu__label" mdk:mandatory="true"/>
+            <RelativeLayout
+                android:id="@+id/gdetailentrainpanel__screendetail__visualpanel"
+                android:layout_height="match_parent" android:layout_width="match_parent">
+                <com.soprasteria.movalysmdk.widget.basic.MDKRichDateTime
+                    android:id="@+id/detail__dateHeure__edit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    mdk:hint="@string/detail__dateHeure__label"
+                    mdk:label="@string/detail__dateHeure__label" mdk:mandatory="true"/>
+                <com.soprasteria.movalysmdk.widget.spinner.MDKRichSpinner
+                    android:id="@+id/detail__VMDetailEntrainPanelLieu__edit"
+                    android:layout_below="@id/detail__dateHeure__edit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    mdk:hasBlankRow="true"
+                    mdk:hint="@string/detail__VMDetailEntrainPanelLieu__label"
+                    mdk:label="@string/detail__VMDetailEntrainPanelLieu__label" mdk:mandatory="true"/>
 
-            <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionImageButton
-                android:id="@+id/button_SaveDetailEntrainPanel"
-                android:layout_below="@id/detail__VMDetailEntrainPanelLieu__edit"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:src="@drawable/ic_btn_ok" movalys:action="com.action.savedetailentrainpanel.SaveDetailEntrainPanel"/>
+                <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionImageButton
+                    android:id="@+id/button_SaveDetailEntrainPanel"
+                    android:layout_below="@id/detail__VMDetailEntrainPanelLieu__edit"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_btn_ok" movalys:action="com.action.savedetailentrainpanel.SaveDetailEntrainPanel"/>
 
-            <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionImageButton
-                android:id="@+id/button_DeleteDetailEntrainPanel"
-                android:layout_below="@id/detail__VMDetailEntrainPanelLieu__edit"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/button_SaveDetailEntrainPanel"
-                android:layout_width="wrap_content"
-                android:src="@drawable/ic_btn_delete" movalys:action="com.action.deletedetailentrainpanel.DeleteDetailEntrainPanel"/>
-        </RelativeLayout>
-    </ScrollView>
-</RelativeLayout>
+                <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionImageButton
+                    android:id="@+id/button_DeleteDetailEntrainPanel"
+                    android:layout_below="@id/detail__VMDetailEntrainPanelLieu__edit"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/button_SaveDetailEntrainPanel"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_btn_delete" movalys:action="com.action.deletedetailentrainpanel.DeleteDetailEntrainPanel"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
 
 
-commented-generation-start-->
+    commented-generation-start-->
