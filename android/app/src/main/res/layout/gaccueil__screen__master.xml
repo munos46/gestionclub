@@ -10,9 +10,9 @@
     <LinearLayout
         android:layout_centerVertical="true"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent" android:orientation="vertical"
         android:layout_marginLeft="@dimen/activity_vertical_padding"
-        android:layout_marginRight="@dimen/activity_vertical_padding">
+        android:layout_marginRight="@dimen/activity_vertical_padding"
+        android:layout_width="match_parent" android:orientation="vertical">
         <ImageView
             android:layout_gravity="center"
             android:layout_height="wrap_content"
@@ -21,8 +21,8 @@
 
         <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMActionButton
             android:drawableLeft="@drawable/calendar"
-            android:id="@+id/button_navigate_ListEntrainScreen"
             android:gravity="center|center_vertical"
+            android:id="@+id/button_navigate_ListEntrainScreen"
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
@@ -37,14 +37,12 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:text="@string/button_navigate_ListJoueurScreen" movalys:activityForResult="com.application.ListJoueurScreen"/>
-
         <Button
             android:drawableLeft="@drawable/export"
             android:gravity="center|center_vertical"
             android:id="@+id/export_excel"
-            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Export excel"/>
+            android:layout_width="match_parent" android:text="Export excel"/>
     </LinearLayout>
 </ScrollView>
 <!--commented-generation-start

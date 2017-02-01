@@ -58,7 +58,7 @@ public class ListJoueurPanelLoaderImpl
 		JoueurDao oJoueurDao = BeanLoader.getInstance().getBean(JoueurDao.class);
 		try {
 			DaoQuery oQuery = oJoueurDao.getSelectDaoQuery();
-			oQuery.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(JoueurField.NOM),OrderAsc.of(JoueurField.PRENOM)));
+			oQuery.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(JoueurField.NOM), OrderAsc.of(JoueurField.PRENOM)));
 
 			r_listJoueur = oJoueurDao.getListJoueur(oQuery, LOAD_CASCADE, p_oContext);
 		} catch (DaoException oDaoException) {

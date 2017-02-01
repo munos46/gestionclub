@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<generation date="Jan 10, 2017 3:39:53 PM">
+<generation date="Feb 1, 2017 9:06:24 AM">
     <info-save-bean-list>
         <info-save-bean executionId="generate">
             <dependency>
@@ -14,7 +14,7 @@
             </dependency>
             <dependency>
                 <artifactId>xmiFile</artifactId>
-                <lastUpdated>1483907666040</lastUpdated>
+                <lastUpdated>1485936373737</lastUpdated>
                 <version>Pas de version</version>
             </dependency>
             <dependency>

@@ -144,6 +144,17 @@ public class JoueurImpl
 	 * 
 	 * 
 	 * <p>Attribute </p>
+	 * <p> type=Boolean mandatory=true</p>
+	 */
+
+	//@non-generated-start[attribute-estPres]
+	//@non-generated-end[attribute-estPres]
+	private Boolean estPres;
+
+	/**
+	 * 
+	 * 
+	 * <p>Attribute </p>
 	 * <p> type=long mandatory=false</p>
 	 */
 
@@ -187,6 +198,7 @@ public class JoueurImpl
 		this.adresse = null;
 		this.commune = null;
 		this.ville = null;
+		this.estPres = null;
 		this.oldId = 0;
 		this.entrainements = null;
 
@@ -478,6 +490,32 @@ public class JoueurImpl
 
 		//@non-generated-start[setter-ville]
 		//@non-generated-end[setter-ville]
+	}
+
+	/** 
+	 * {@inheritDoc}
+	 * 
+	 * @see com.model.Joueur#isEstPres()
+	 */
+	@Override
+	public Boolean isEstPres() {
+
+		return this.estPres;
+
+	}
+
+	/**
+	 * {@inheritDoc}
+	 * 
+	 * @see com.model.Joueur#setEstPres(java.lang.Boolean)
+	 */
+	@Override
+	public void setEstPres(Boolean p_bEstPres) {
+
+		this.estPres = p_bEstPres;
+
+		//@non-generated-start[setter-estPres]
+		//@non-generated-end[setter-estPres]
 	}
 
 	/** 

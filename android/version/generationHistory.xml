@@ -546,4 +546,85 @@
         </info-save-bean-list>
         <applied-project-upgraders/>
     </generation>
+    <generation date="Jan 10, 2017 3:39:53 PM">
+        <info-save-bean-list>
+            <info-save-bean executionId="generate">
+                <dependency>
+                    <artifactId>adjava-android</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.12.0</version>
+                </dependency>
+                <dependency>
+                    <artifactId>mf4mdd-android</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.6.0</version>
+                </dependency>
+                <dependency>
+                    <artifactId>xmiFile</artifactId>
+                    <lastUpdated>1483907666040</lastUpdated>
+                    <version>Pas de version</version>
+                </dependency>
+                <dependency>
+                    <artifactId>adjava-maven-plugin</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.12.0</version>
+                </dependency>
+            </info-save-bean>
+        </info-save-bean-list>
+        <applied-project-upgraders/>
+    </generation>
+    <generation date="Feb 1, 2017 8:44:17 AM">
+        <info-save-bean-list>
+            <info-save-bean executionId="generate">
+                <dependency>
+                    <artifactId>adjava-android</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.12.0</version>
+                </dependency>
+                <dependency>
+                    <artifactId>mf4mdd-android</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.6.0</version>
+                </dependency>
+                <dependency>
+                    <artifactId>xmiFile</artifactId>
+                    <lastUpdated>1485934999403</lastUpdated>
+                    <version>Pas de version</version>
+                </dependency>
+                <dependency>
+                    <artifactId>adjava-maven-plugin</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.12.0</version>
+                </dependency>
+            </info-save-bean>
+        </info-save-bean-list>
+        <applied-project-upgraders/>
+    </generation>
+    <generation date="Feb 1, 2017 8:54:58 AM">
+        <info-save-bean-list>
+            <info-save-bean executionId="generate">
+                <dependency>
+                    <artifactId>adjava-android</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.12.0</version>
+                </dependency>
+                <dependency>
+                    <artifactId>mf4mdd-android</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.6.0</version>
+                </dependency>
+                <dependency>
+                    <artifactId>xmiFile</artifactId>
+                    <lastUpdated>1485935686678</lastUpdated>
+                    <version>Pas de version</version>
+                </dependency>
+                <dependency>
+                    <artifactId>adjava-maven-plugin</artifactId>
+                    <lastUpdated>0</lastUpdated>
+                    <version>6.12.0</version>
+                </dependency>
+            </info-save-bean>
+        </info-save-bean-list>
+        <applied-project-upgraders/>
+    </generation>
 </generation-history>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <GridLayout
     android:id="@+id/glistjoueurpanel__listitem1__master"
     android:layout_height="match_parent"
@@ -11,32 +10,53 @@
     android:paddingTop="@dimen/activity_vertical_padding"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
-
-    <ImageView
-        android:src="@drawable/contact"/>
-
-    <TextView
-        android:focusable="false"
+    <ImageView android:src="@drawable/contact"/>
+    <TextView android:focusable="false"
         android:id="@+id/vmlistjoueurpanelimpl__nom__value"
+        android:layout_gravity="center_vertical"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:maxLength="255"
-        android:layout_gravity="center_vertical"
         android:paddingLeft="@dimen/list_padding_top"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/textColorPrimary"
-        />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/textColorPrimary"/>
+    <TextView android:focusable="false"
+        android:id="@+id/vmlistjoueurpanelimpl__prenom__value"
+        android:layout_below="@id/vmlistjoueurpanelimpl__nom__value"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:maxLength="255"
+        android:paddingLeft="@dimen/activity_vertical_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" android:textColor="@color/textColorPrimary"/>
+</GridLayout>
+<!--commented-generation-start
 
-    <TextView
+<?xml version="1.0" encoding="UTF-8"?>
+
+<com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMCheckableRelativeLayout
+    android:id="@+id/glistjoueurpanel__listitem1__master"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" style="?attr/LISTITEM_1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
+    <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
+        android:focusable="false"
+        android:id="@+id/vmlistjoueurpanelimpl__nom__value"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:maxLength="255"
+        mdk:hint="@string/vmlistjoueurpanelimpl__nom__label"
+        mdk:label="@string/vmlistjoueurpanelimpl__nom__label"
+        mdk:mandatory="true" mdk:readOnly="true"/>
+    <com.soprasteria.movalysmdk.widget.basic.MDKRichEditText
         android:focusable="false"
         android:id="@+id/vmlistjoueurpanelimpl__prenom__value"
         android:layout_below="@id/vmlistjoueurpanelimpl__nom__value"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:maxLength="255"
-        android:layout_gravity="center_vertical"
-        android:paddingLeft="@dimen/activity_vertical_padding"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/textColorPrimary"
-        />
-</GridLayout>
+        android:layout_width="match_parent" android:maxLength="255"
+        mdk:hint="@string/vmlistjoueurpanelimpl__prenom__label"
+        mdk:label="@string/vmlistjoueurpanelimpl__prenom__label"
+        mdk:mandatory="true" mdk:readOnly="true"/>
+</com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMCheckableRelativeLayout>
+
+
+commented-generation-start-->

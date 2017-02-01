@@ -22,6 +22,9 @@
         android:layout_alignBaseline="@+id/estPresent"
         android:layout_alignBottom="@+id/estPresent"
         android:layout_toRightOf="@+id/estPresent"
-        android:text="TextView" />
+        android:text="TextView"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        android:focusable="false"/>
 
 </RelativeLayout>

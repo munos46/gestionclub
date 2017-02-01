@@ -4,15 +4,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import com.adeuza.movalysfwk.mobile.mf4android.activity.AbstractMMActivity;
 import com.adeuza.movalysfwk.mobile.mf4android.activity.business.displaymain.MFRootActivity;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.application.Application;
@@ -32,7 +31,6 @@ import com.dao.JoueurField;
 import com.model.Entrainement;
 import com.model.EntrainementCascade;
 import com.model.Joueur;
-
 import android.os.Environment;
 import android.support.v7.app.ActionBar;
 import android.util.Log;
@@ -42,18 +40,17 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import jxl.Workbook;
-import jxl.WorkbookSettings;
 import jxl.format.Alignment;
 import jxl.format.Orientation;
+import jxl.Workbook;
+import jxl.WorkbookSettings;
+import jxl.write.biff.RowsExceededException;
 import jxl.write.Label;
 import jxl.write.WritableCellFormat;
 import jxl.write.WritableFont;
 import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
 
 /**
  * 
@@ -109,7 +106,6 @@ public class Accueil
 	}
 
 	//@non-generated-start[methods]
-
 	/**
 	 * Fonction qui permet de créer le fichier excel
 	 */
@@ -208,9 +204,7 @@ public class Accueil
 
 	}
 
-	private static void addCell(WritableSheet sheet,
-								Orientation orientation,
-								int col, int row, String desc) throws WriteException {
+	private static void addCell(WritableSheet sheet, Orientation orientation, int col, int row, String desc) throws WriteException {
 
 		WritableCellFormat format = new WritableCellFormat();
 		format.setOrientation(orientation);

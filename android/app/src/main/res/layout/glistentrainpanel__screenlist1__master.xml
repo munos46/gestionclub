@@ -9,8 +9,8 @@
 
     <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMListView
         android:choiceMode="singleChoice"
-        android:id="@+id/vmlistentrainpanelimpl__list__value"
         android:divider="@null"
+        android:id="@+id/vmlistentrainpanelimpl__list__value"
         android:layout_height="match_parent"
         android:layout_width="match_parent" movalys:mandatory="false"/>
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RelativeLayout
+    android:background="@color/white"
     android:fitsSystemWindows="true"
     android:id="@+id/gdetailentrainscreen__screendetail__master"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/white"
     xmlns:mdk="http://schemas.android.com/apk/res-auto" xmlns:movalys="http://www.adeuza.com/movalys/mm/android">
 
     <com.adeuza.movalysfwk.mobile.mf4android.ui.views.MMMultiSectionFragmentLayout

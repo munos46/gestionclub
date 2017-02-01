@@ -272,6 +272,28 @@ public interface Joueur extends MEntity
 	 * 
 	 * 
 	 * <p>Attribute </p>
+	 * <p> type=Boolean mandatory=true</p>
+
+	 * 
+	 * @return une entité Boolean correspondant à la valeur de l'attribut estPres
+	 */
+	public Boolean isEstPres();
+
+	/**
+	 * 
+	 *
+	 * <p>Attribute </p>
+	 * <p> type=Boolean mandatory=true</p>
+	 *
+	 * @param p_bEstPres la valeur à affecter à l'attribut estPres
+	 *
+	 */
+	public void setEstPres(Boolean p_bEstPres);
+
+	/**
+	 * 
+	 * 
+	 * <p>Attribute </p>
 	 * <p> type=long mandatory=false</p>
 
 	 * 

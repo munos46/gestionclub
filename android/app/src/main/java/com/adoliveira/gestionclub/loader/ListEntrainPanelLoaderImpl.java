@@ -17,11 +17,11 @@ import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.DaoException;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.DaoQuery;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderAsc;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderSet;
-import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.SqlType;
-import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.query.SqlBindValue;
-import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.query.SqlField;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.query.conditions.OperatorCondition;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.query.conditions.SqlCompareValueCondition;
+import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.query.SqlBindValue;
+import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.query.SqlField;
+import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.SqlType;
 import com.dao.EntrainementDao;
 import com.dao.EntrainementField;
 import com.dao.JoueurField;
@@ -88,6 +88,8 @@ public class ListEntrainPanelLoaderImpl
 				OperatorCondition.SUPERIOR_OR_EQUALS);
 
 		oQuery.getSqlQuery().addToWhere(sqlcomparevaluecondition1);
+
+		oQuery.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(EntrainementField.DATEHEURE)));
 
 		try {
 			r_listEntrainement = oEntrainementDao.getListEntrainement(oQuery, LOAD_CASCADE, p_oContext);

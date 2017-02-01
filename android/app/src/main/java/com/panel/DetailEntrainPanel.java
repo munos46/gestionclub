@@ -32,38 +32,25 @@ import com.adeuza.movalysfwk.mobile.mf4mjcommons.core.services.BeanLoader;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.DaoException;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.DaoQuery;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderAsc;
-import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderDesc;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.data.dao.OrderSet;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ListViewModel;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ViewModel;
 import com.adoliveira.gestionclub.loader.DetailEntrainPanelLoader;
-import com.adoliveira.gestionclub.loader.DetailEntrainPanelLoaderImpl;
 import com.adoliveira.gestionclub.R;
-import com.dao.EntrainJoueurDao;
 import com.dao.JoueurDao;
 import com.dao.JoueurField;
 import com.model.Entrainement;
 import com.model.EntrainementImpl;
 import com.model.Joueur;
-import com.model.JoueurImpl;
 import com.model.Lieu;
 import com.soprasteria.movalysmdk.widget.spinner.MDKRichSpinner;
 import com.viewmodel.VMDetailEntrainPanel;
 import com.viewmodel.VMDetailEntrainPanelLieu;
 import com.viewmodel.VMDetailEntrainScreen;
-
-import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import org.w3c.dom.Text;
-
-import fr.ganfra.materialspinner.MaterialSpinner;
 
 /**
  * 
@@ -84,8 +71,8 @@ public class DetailEntrainPanel
 	//@non-generated-end
 	//@non-generated-start[attributes]
 	ArrayList<Joueur> listeJoueur;
-	private ViewGroup aView;
-	private static int nbJoueur;
+	private static ViewGroup aView;
+	public static int nbJoueur;
 
 	//@non-generated-end
 
@@ -165,48 +152,59 @@ public class DetailEntrainPanel
 	@ListenerOnDataLoaderReload(DetailEntrainPanelLoader.class)
 		public void doOnReloadDetailEntrainPanelLoader(ListenerOnDataLoaderReloadEvent<DetailEntrainPanelLoader> p_oEvent) {
 			//@non-generated-start[doOnReloadDetailEntrainPanelLoader]
-		final InUpdateVMParameter oActionParameter = new InUpdateVMParameter();
-		oActionParameter.setDataLoader(DetailEntrainPanelLoader.class);
+        final InUpdateVMParameter oActionParameter = new InUpdateVMParameter();
+        oActionParameter.setDataLoader(DetailEntrainPanelLoader.class);
 
-		oActionParameter.setVm(VMDetailEntrainPanel.class);
-		this.launchAction(GenericUpdateVMForDisplayDetailAction.class, oActionParameter);
+        oActionParameter.setVm(VMDetailEntrainPanel.class);
+        this.launchAction(GenericUpdateVMForDisplayDetailAction.class, oActionParameter);
 
-		final EntrainementImpl entrainement = (EntrainementImpl) p_oEvent.getDataLoader().getData(Dataloader.DEFAULT_KEY);
+        final EntrainementImpl entrainement = (EntrainementImpl) p_oEvent.getDataLoader().getData(Dataloader.DEFAULT_KEY);
 
-		this.listeJoueur = new ArrayList<>();
-		this.listeJoueur.addAll(entrainement.getJoueurs());
-		nbJoueur = this.listeJoueur.size();
-
-
-		final TextView nbPersonne = (TextView) aView.findViewById(R.id.nbPerPresente);
-		nbPersonne.setText(String.valueOf(nbJoueur).concat(" personne(s) sélectionnée(s)"));
-
-		//create an ArrayAdaptar from the String Array
-		JoueurDao joueurDao = BeanLoader.getInstance().getBean(JoueurDao.class);
-		MContextFactory oMContextFactory = (MContextFactory) BeanLoader.getInstance().getBean(MContextFactory.class);
-		MContext context = oMContextFactory.createContext();
-
-		DaoQuery oQuery = joueurDao.getSelectDaoQuery();
-		oQuery.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(JoueurField.NOM),OrderAsc.of(JoueurField.PRENOM)));
+        this.listeJoueur = new ArrayList<>();
+        this.listeJoueur.addAll(entrainement.getJoueurs());
+        nbJoueur = this.listeJoueur.size();
 
 
-		List<Joueur> listJoueurAll = new ArrayList<>();
-		try {
-			listJoueurAll = joueurDao.getListJoueur(oQuery, context);
-		} catch (DaoException e) {
-			e.printStackTrace();
-		}
+        TextView nbPersonne = (TextView) aView.findViewById(R.id.nbPerPresente);
+        nbPersonne.setText(String.valueOf(nbJoueur).concat(" personne(s) sélectionnée(s)"));
 
-		context.endTransaction();
-		context.close();
+        //create an ArrayAdaptar from the String Array
+        JoueurDao joueurDao = BeanLoader.getInstance().getBean(JoueurDao.class);
+        MContextFactory oMContextFactory = (MContextFactory) BeanLoader.getInstance().getBean(MContextFactory.class);
+        MContext context = oMContextFactory.createContext();
 
-		ListeJoueurAdapter adapter = new ListeJoueurAdapter(getContext(),
-				R.layout.detailentrainpanel_listejoueur, (ArrayList<Joueur>) listJoueurAll, this.listeJoueur);
+        DaoQuery oQuery = joueurDao.getSelectDaoQuery();
+        oQuery.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(JoueurField.NOM), OrderAsc.of(JoueurField.PRENOM)));
 
-		ListView listView = (ListView) aView.findViewById(R.id.detailListJoueur);
+        List<Joueur> listJoueurAll = new ArrayList<>();
+        try {
+            listJoueurAll = joueurDao.getListJoueur(oQuery, context);
+        } catch (DaoException e) {
+            e.printStackTrace();
+        }
 
-		// Assign adapter to ListView
-		listView.setAdapter(adapter);
+        context.endTransaction();
+        context.close();
+
+        for (Joueur unJoueur : this.listeJoueur)
+        {
+            for (Joueur j : listJoueurAll)
+            {
+                if (j.getNom().equals(unJoueur.getNom()) && j.getPrenom().equals(unJoueur.getPrenom()))
+                {
+                    j.setEstPres(true);
+                    break;
+                }
+            }
+        }
+
+        ListeJoueurAdapter adapter = new ListeJoueurAdapter(getContext(),
+                R.layout.detailentrainpanel_listejoueur, (ArrayList<Joueur>) listJoueurAll, entrainement.getId());
+
+        ListView listView = (ListView) aView.findViewById(R.id.detailListJoueur);
+
+        // Assign adapter to ListView
+        listView.setAdapter(adapter);
 
 //@non-generated-end
 		}
@@ -222,5 +220,17 @@ public class DetailEntrainPanel
 	//@non-generated-end
 
 	//@non-generated-start[methods]
+	public static void ajouteJoueur ()
+	{
+		nbJoueur++;
+		TextView nbPersonne = (TextView) aView.findViewById(R.id.nbPerPresente);
+		nbPersonne.setText(String.valueOf(nbJoueur).concat(" personne(s) sélectionnée(s)"));
+	}
+	public static void enleveJoueur ()
+	{
+		nbJoueur--;
+		TextView nbPersonne = (TextView) aView.findViewById(R.id.nbPerPresente);
+		nbPersonne.setText(String.valueOf(nbJoueur).concat(" personne(s) sélectionnée(s)"));
+	}
 	//@non-generated-end
 }
