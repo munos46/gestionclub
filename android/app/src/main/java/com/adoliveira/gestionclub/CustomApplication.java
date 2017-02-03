@@ -6,10 +6,17 @@ import com.soprasteria.movalysmdk.widget.core.provider.MDKWidgetApplication;
 import com.soprasteria.movalysmdk.widget.core.provider.MDKWidgetComponentActionHelper;
 import com.soprasteria.movalysmdk.widget.core.provider.MDKWidgetComponentProvider;
 
+import org.acra.ACRA;
+import org.acra.ReportingInteractionMode;
+import org.acra.annotation.ReportsCrashes;
+
 /**
  * Custom application.
  *
  */
+@ReportsCrashes(mailTo = "adrien.oliveira46@gmail.com", // my email here
+		mode = ReportingInteractionMode.TOAST,
+		resToastText = R.string.crash_toast_text)
 public class CustomApplication extends MFAndroidApplication implements MDKWidgetApplication {
 
 	/**
@@ -37,5 +44,11 @@ public class CustomApplication extends MFAndroidApplication implements MDKWidget
 			mdkWidgetComponentActionHelper = BeanLoader.getInstance().getBean(MDKWidgetComponentActionHelper.class);
 		}
 		return mdkWidgetComponentActionHelper;
+	}
+
+	@Override
+	public void onCreate() {
+		ACRA.init(this);
+		super.onCreate();
 	}
 }

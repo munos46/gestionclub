@@ -92,6 +92,9 @@ dependencies {
     // Export Excel
     compile "net.sourceforge.jexcelapi:jxl:2.6.10"
 
+    // envoi d'un message pour les crash
+    compile "ch.acra:acra:4.9.0"
+
     //to run test: ./gradlew connectedAndroidTest
     androidTestCompile "com.android.support.test.espresso:espresso-core:2.2.1"
     androidTestCompile "com.android.support:support-annotations:$appcompatv7Version"

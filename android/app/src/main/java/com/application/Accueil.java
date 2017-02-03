@@ -12,6 +12,8 @@ import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.adeuza.movalysfwk.mf4jcommons.model.configuration.entity.utils.StringUtils;
 import com.adeuza.movalysfwk.mobile.mf4android.activity.AbstractMMActivity;
 import com.adeuza.movalysfwk.mobile.mf4android.activity.business.displaymain.MFRootActivity;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.application.Application;
@@ -40,6 +42,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.acra.ACRA;
+import org.acra.ReportingInteractionMode;
+import org.acra.annotation.ReportsCrashes;
+
 import jxl.format.Alignment;
 import jxl.format.Orientation;
 import jxl.Workbook;
@@ -117,12 +124,7 @@ public class Accueil
 			File dir = new File(Environment.getExternalStorageDirectory() + "/Download/RAF/");
 			dir.mkdirs();
 
-			myFirstWbook = Workbook.createWorkbook(new File(dir, "test.xls"));
-
-			// create an Excel sheet
-			WritableSheet excelSheet = myFirstWbook.createSheet("Entrainement", 0);
-
-			excelSheet.setColumnView(0, 25);
+			myFirstWbook = Workbook.createWorkbook(new File(dir, "Details_entrainements_raf.xls"));
 
 			// Récupération de la liste des entrainements
 			EntrainementDao entrainementDao = BeanLoader.getInstance().getBean(EntrainementDao.class);
@@ -138,15 +140,6 @@ public class Accueil
 
 			List<Joueur> listJoueur = joueurDao.getListJoueur(oQuery,context);
 
-			int posJoueur = 1;
-			for (Joueur unJoueur : listJoueur)
-			{
-				Label label = new Label(0, posJoueur, unJoueur.getNom().concat(" ").concat(unJoueur.getPrenom()));
-				excelSheet.addCell(label);
-				mapPositionJoueur.put(unJoueur.getNom().concat(unJoueur.getPrenom()), posJoueur);
-				posJoueur++;
-			}
-
 			DaoQuery oQueryEntrain = entrainementDao.getSelectDaoQuery();
 			oQueryEntrain.getSqlQuery().setOrderBy(OrderSet.of(OrderAsc.of(EntrainementField.DATEHEURE)));
 
@@ -154,8 +147,32 @@ public class Accueil
 					EntrainementCascade.JOUEUR, EntrainementCascade.JOUEURS), context);
 
 			int indEntrain = 1;
+			String moiEnCours = StringUtils.EMPTY;
+			WritableSheet excelSheet = null;
+			int indSheet = 0;
 			for (Entrainement unEntrainement : listEntrainement)
 			{
+				String date = new SimpleDateFormat("MMMM").format(unEntrainement.getDateHeure());
+				if (!moiEnCours.equals(date)) {
+					// create an Excel sheet
+					excelSheet = myFirstWbook.createSheet(date, indSheet);
+					excelSheet.setColumnView(0, 25);
+					indSheet++;
+					indEntrain = 1;
+
+					int posJoueur = 1;
+					for (Joueur unJoueur : listJoueur) {
+						Label label = new Label(0, posJoueur, unJoueur.getNom().concat(" ").concat(unJoueur.getPrenom()));
+						excelSheet.addCell(label);
+						mapPositionJoueur.put(unJoueur.getNom().concat(unJoueur.getPrenom()), posJoueur);
+						posJoueur++;
+					}
+					posJoueur++;
+					mapPositionJoueur.put("total", posJoueur);
+					Label label = new Label(0, posJoueur, "TOTAL");
+					excelSheet.addCell(label);
+					moiEnCours = date;
+				}
 				WritableCellFormat format = new WritableCellFormat();
 				format.setOrientation(Orientation.MINUS_90);
 				format.setAlignment(Alignment.CENTRE);
@@ -172,6 +189,10 @@ public class Accueil
 					Label label2 = new Label(indEntrain, mapPositionJoueur.get(unJouPres.getNom().concat(unJouPres.getPrenom())), "X", formatX );
 					excelSheet.addCell(label2);
 				}
+
+				// On ajoute une ligne pour le total
+				Label labelTotal = new Label(indEntrain, mapPositionJoueur.get("total"), String.valueOf(unEntrainement.getJoueurs().size()));
+				excelSheet.addCell(labelTotal);
 
 				indEntrain++;
 			}
