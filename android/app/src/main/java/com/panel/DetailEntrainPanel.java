@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.action.deletedetailentrainpanel.DeleteDetailEntrainPanel;
 import com.action.savedetailentrainpanel.SaveDetailEntrainPanel;
+import com.adapter.DatePickerFragment;
 import com.adapter.ListeJoueurAdapter;
 import com.adeuza.movalysfwk.mobile.mf4android.activity.AbstractAutoBindMMActivity;
 import com.adeuza.movalysfwk.mobile.mf4android.activity.AbstractMMActivity;
@@ -37,6 +38,7 @@ import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ListViewModel;
 import com.adeuza.movalysfwk.mobile.mf4mjcommons.ui.model.ViewModel;
 import com.adoliveira.gestionclub.loader.DetailEntrainPanelLoader;
 import com.adoliveira.gestionclub.R;
+import com.application.DetailEntrainScreen;
 import com.dao.JoueurDao;
 import com.dao.JoueurField;
 import com.model.Entrainement;
@@ -47,6 +49,9 @@ import com.soprasteria.movalysmdk.widget.spinner.MDKRichSpinner;
 import com.viewmodel.VMDetailEntrainPanel;
 import com.viewmodel.VMDetailEntrainPanelLieu;
 import com.viewmodel.VMDetailEntrainScreen;
+
+import android.app.DialogFragment;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -105,7 +110,16 @@ public class DetailEntrainPanel
 		spinner.setAdapter(adapter);*/
 		aView = p_oRoot;
 		//@non-generated-end
-		//@non-generated-start[do-after-inflate-2][X]
+		//@non-generated-start[do-after-inflate-2]
+		TextView textField = (TextView) p_oRoot.findViewById(R.id.dateCalendarDay);
+		textField.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				DatePickerFragment pickerFragment = new DatePickerFragment();
+				pickerFragment.show(getFragmentManager(), "test");
+			}
+		});
+
 		//@non-generated-end
 	}
 
@@ -206,6 +220,8 @@ public class DetailEntrainPanel
         // Assign adapter to ListView
         listView.setAdapter(adapter);
 
+
+
 //@non-generated-end
 		}
 
@@ -232,5 +248,6 @@ public class DetailEntrainPanel
 		TextView nbPersonne = (TextView) aView.findViewById(R.id.nbPerPresente);
 		nbPersonne.setText(String.valueOf(nbJoueur).concat(" personne(s) sélectionnée(s)"));
 	}
+
 	//@non-generated-end
 }

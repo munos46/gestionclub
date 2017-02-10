@@ -5,6 +5,8 @@
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:maxLength="255"
+    android:textColor="@color/textColorSecondary"
+    android:layout_gravity="right"
     mdk:hint="@string/seldetail__nom__label"
     mdk:mandatory="true"
     mdk:readOnly="true"
